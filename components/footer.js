@@ -76,7 +76,7 @@ export default function Footer() {
             </span>
             {/* :::Copyright */}
             <span className="py-4 text-xs">
-              &copy;2022 Buidlers.tech All Rights Reserved.
+              &copy;2023 Buidlers.tech All Rights Reserved.
             </span>
           </div>
           {/* ::Mobile separator line */}

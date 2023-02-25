@@ -42,7 +42,7 @@ export default function Hero() {
                      bg-transparent border-amber-500 border-opacity-60 px-8 py-3 text-base text-amber-500
                       font-monospace font-light  hover:bg-amber-400 md:py-4 md:px-10 md:text-lg"
                   >
-                    Lanzamiento Nov &apos;22! 🏁
+                    Lanzamiento Mar &apos;23! 🏁
                   </a>
                 </div>
               </div>
