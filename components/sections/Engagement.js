@@ -11,7 +11,7 @@ export default function Engagement() {
             src={'/bg/51.png'}
             width="1000"
             height="1000"
-            layout="cover"
+            priority="true"
             alt=""
           />
         </div>
@@ -23,11 +23,9 @@ export default function Engagement() {
             className="absolute inset-y-0  -left-48 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="black"
             viewBox="0 0 100 100"
-            // viewBox="100 100 0 0"
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            {/* <polygon points="50,0 10,0 50,100 100,100" /> */}
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
 

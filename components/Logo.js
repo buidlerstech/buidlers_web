@@ -6,14 +6,13 @@ export default function Logo({ src, ...rest }) {
     <Link
       href="/"
       style={{
-        // variant: 'links.logo',
         display: 'flex',
         cursor: 'pointer',
         mr: 15
       }}
       {...rest}
     >
-      <Image src={src} alt="Buidlers" />
+      <Image src={src} alt="Buidlẽrs" />
     </Link>
   )
 }

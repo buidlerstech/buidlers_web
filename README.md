@@ -4,4 +4,4 @@ This is the initial version of our beloved platform.
 
 More to come!
 
-(C) 2022 Buidlers.tech
+(C) 2023 Buidlers.tech

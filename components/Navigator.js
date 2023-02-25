@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import Logo from './logo'
+import Logo from './Logo'
 import LogoDark from '../assets/logo.svg'
 
-function MobileNav({ open, setOpen }) {
+function MobileNavigator({ open, setOpen }) {
   return (
     <div
       className={`absolute top-20 z-50 -left-8 pl-20 rounded-tr-3xl h-screen w-screen bg-zinc-800 transform ${
@@ -38,14 +38,14 @@ function MobileNav({ open, setOpen }) {
   )
 }
 
-export default function Navi() {
+export default function Navigator() {
   const [open, setOpen] = useState(false)
 
   return (
     <div className="relative z-50">
       <div className="fixed top-0 left-0 right-0">
         <div className="flex filter drop-shadow-md z-50 bg-black py-4 h-20 items-center px-8">
-          <MobileNav open={open} setOpen={setOpen} />
+          <MobileNavigator open={open} setOpen={setOpen} />
           <div className="w-3/12 flex items-center">
             <Logo src={LogoDark} />
           </div>

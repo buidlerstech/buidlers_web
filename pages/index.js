@@ -1,26 +1,26 @@
-import PageLayout from '../components/pageLayout'
+import PageLayout from '../components/PageLayout'
 import styles from '../styles/Home.module.css'
-import Navi from '../components/navi'
-import Hero from '../components/heroMain'
-import Motivations from '../components/motivations'
-import HeroStudies from '../components/engagement'
-import FeaturedAreas from '../components/featuredAreas'
-import CardSquare from '../components/cardSquare'
-import Footer from '../components/footer'
-import CommunitySlider from '../components/comunitySlider'
+import Navigator from '../components/Navigator'
+import HeroMain from '../components/sections/HeroMain'
+import Motivations from '../components/sections/Motivations'
+import Engagement from '../components/sections/Engagement'
+import FeaturedAreas from '../components/sections/FeaturedAreas'
+import Proposal from '../components/sections/Proposal'
+import Footer from '../components/Footer'
+import CommunitySlider from '../components/sections/CommunitySlider'
 export default function Home() {
   return (
-    <PageLayout title="Homeee">
+    <PageLayout title="Buidlers.tech">
       <div className={styles.container}>
-        <Navi />
+        <Navigator />
         <div className=" mt-20">
-          <Hero></Hero>
+          <HeroMain />
           <Motivations />
-          <FeaturedAreas></FeaturedAreas>
-          <CardSquare></CardSquare>
-          <CommunitySlider></CommunitySlider>
-          <HeroStudies></HeroStudies>
-          <Footer></Footer>
+          <FeaturedAreas />
+          <Proposal />
+          <CommunitySlider />
+          <Engagement />
+          <Footer />
         </div>
         {/* <main className={styles.main}>
         <h1 className={styles.title}>

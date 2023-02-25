@@ -8,7 +8,7 @@ import { useState } from 'react'
  * @param images - Array of images with src and alt attributes
  * @returns React component
  */
-export default function Carousel({ images }) {
+export default function CommunitySlider({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   images = [
@@ -106,7 +106,7 @@ export default function Carousel({ images }) {
               return (
                 <div
                   key={index}
-                  className="bg-neutral-900 rounded-xl self-center p-10 "
+                  className="bg-neutral-900 rounded-xl self-center p-10 animate-in slide-in-from-top"
                 >
                   <div className="flex flex-row gap-12">
                     <div className="basis-1/3">

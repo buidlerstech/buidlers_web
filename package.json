@@ -1,6 +1,6 @@
 {
   "name": "web-buidlers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "author": "Leo Sagan @EthSagan",
   "scripts": {
@@ -20,7 +20,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.2"
+    "tailwindcss": "^3.2.2",
+    "tailwindcss-animate": "^1.0.5"
   },
   "prettier": {
     "arrowParens": "avoid",

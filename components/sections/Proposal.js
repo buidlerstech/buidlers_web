@@ -18,7 +18,7 @@ import {
 //   }
 // ]
 
-export default function CardSquare() {
+export default function Proposal() {
   return (
     // <div
     //   className="  flex flex-wrap lg:flex-nowrap text-black
