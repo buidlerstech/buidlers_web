@@ -20,11 +20,13 @@ export default function HeroMain() {
           <main className="mx-auto mt-10 max-w-7xl px-8 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 lg:px-8 xl:mt-12 animate-in slide-in-from-left duration-1000">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-amber-50 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Únete a Buidlers!</span>
-                <div>
-                  <span className="sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 block text-amber-500 xl:inline">
-                    ¿Estás listo para construir?
-                  </span>
+                <div className="block xl:inline">¡Únete a Buidlers!</div>
+
+                <div
+                  className="mt-4
+                   text-amber-500 xl:inlines"
+                >
+                  ¿Estás listo para construir?
                 </div>
               </h1>
               <p className="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
