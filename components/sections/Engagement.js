@@ -46,29 +46,33 @@ export default function Engagement() {
                   </div>
                 </div>
               </h3>
-              <p className="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Lorem ipsum...
+              <p className="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl ">
+                Aprende de primera mano de aquellos que están en la vanguardia
+                de la tecnología web3. Obtén perspectivas valiosas y consejos
+                prácticos para impulsar tu camino en el ecosistema. Participa
+                expande tus horizontes y potencia tu trayectoria en la
+                construcción de aplicaciones web3.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
                 <div className="rounded-md shadow">
                   <Link
-                    href="#"
+                    href="https://twitter.com/buidlerstech"
                     className="flex font-bold w-full items-center justify-center rounded-md border border-transparent
                     bg-transparent border-amber-500 border-opacity-60 px-8 py-3 text-base text-amber-600
                      hover:bg-amber-400 md:py-4 md:px-10 md:text-lg"
                   >
-                    CANAL DE ANUNCIOS
+                    TWITTER
                   </Link>
                 </div>
 
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <Link
-                    href="#"
+                    href="https://discord.gg/3WcNxGagWT"
                     className="flex font-bold w-full items-center justify-center rounded-md border border-transparent
                      bg-transparent border-amber-500 border-opacity-60 px-8 py-3 text-base text-amber-600
                       hover:bg-amber-400 md:py-4 md:px-10 md:text-lg"
                   >
-                    CHATS EN DISCORD
+                    DISCORD
                   </Link>
                 </div>
               </div>

@@ -18,7 +18,7 @@ export default function Home() {
           <Motivations />
           <FeaturedAreas />
           <Proposal />
-          <CommunitySlider />
+          {/* <CommunitySlider /> */}
           <Engagement />
           <Footer />
         </div>

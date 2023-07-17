@@ -20,12 +20,10 @@ export default function HeroMain() {
           <main className="mx-auto mt-10 max-w-7xl px-8 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 lg:px-8 xl:mt-12 animate-in slide-in-from-left duration-1000">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-amber-50 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">
-                  Mentes ávidas de conocimiento.
-                </span>
+                <span className="block xl:inline">Únete a Buidlers!</span>
                 <div>
                   <span className="sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 block text-amber-500 xl:inline">
-                    Manos listas para construir.
+                    ¿Estás listo para construir?
                   </span>
                 </div>
               </h1>
@@ -37,15 +35,15 @@ export default function HeroMain() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="mt-5 sm:mt-0 sm:ml-3 rounded-md shadow">
                   <a
-                    href="#"
+                    href="https://discord.gg/3WcNxGagWT"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-amber-500 bg- px-8 py-3
                      text-base font-bold text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
                   >
-                    SÉ PARTE →
+                    Unite a nosotros →
                   </a>
                 </div>
 
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                {/*                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
                     className="flex font-bold w-full items-center justify-center rounded-md border border-transparent
@@ -54,7 +52,7 @@ export default function HeroMain() {
                   >
                     PRESENTACIÓN 🎬
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </main>

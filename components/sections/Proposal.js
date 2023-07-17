@@ -99,8 +99,7 @@ export default function Proposal() {
           Nuestra propuesta
         </p>
         <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-          Cómo llevaremos a cabo nuestra misión? Qué estamos ofreciendo al
-          ecosistema?
+          Nuestra hoja de ruta y propuesta de valor para el ecosistema
         </p>
       </div>
 
@@ -121,8 +120,8 @@ export default function Proposal() {
             Eventos impulsados por la comunidad
           </h3>
           <p className="mt-2 text-center text-sm text-gray-400">
-            Cada semana hosteamos conversaciones con equipos de los protocolos
-            mas relevantes del ecosistema.
+            Hosteamos conversaciones con equipos de los protocolos más
+            relevantes del ecosistema.
           </p>
         </div>
 
@@ -138,8 +137,8 @@ export default function Proposal() {
             Forums de preguntas y respuestas
           </h2>
           <p className="mt-2 text-center text-sm text-gray-400">
-            Estas con una duda que no te deja avanzar en un desarrollo? Entre
-            todos te ayudamos a encontrar la solución!
+            Estamos listos para apoyarte y brindarte las herramientas necesarias
+            para superar los obstaculos.
           </p>
         </div>
 
@@ -152,11 +151,11 @@ export default function Proposal() {
           </div>
 
           <h2 className="mt-2 text-center text-2xl font-bold tracking-tight text-amber-500">
-            Contacto directo con teams y OGs
+            Contacto directo con equipos y protocolos
           </h2>
           <p className="mt-2  text-center text-sm text-gray-400">
-            En nuestros canales de Discord categorizados por tema y nivel,
-            tendrás la inestimable ayuda de expertos y <i>OGs</i>.
+            En nuestros canales de Discord categorizados por tema, tendrás la
+            ayuda de protocolos, expertos y <i>OGs</i>.
           </p>
         </div>
 
@@ -169,11 +168,11 @@ export default function Proposal() {
           </div>
 
           <h2 className="mt-2 text-center text-2xl font-bold tracking-tight text-amber-500">
-            Verdadero aprendizaje peer-to-peer
+            Verdadero aprendizaje y colaboración
           </h2>
           <p className="mt-2 text-center text-sm text-gray-400">
-            Vivimos en perma-hackathon, donde la inteligencia colectiva es
-            nuestro ADN.
+            Estamos en constante modo de innovación, donde la colaboración y la
+            inteligencia colectiva son fundamentales para nosotros.
           </p>
         </div>
       </div>

@@ -9,31 +9,31 @@ const features = [
   {
     name: 'Web3',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Exploramos y utilizamos web3 para construir aplicaciones descentralizadas, creamos contratos inteligentes, trabajamos con diversos protocolos, creamos soluciones innovadoras en esta nueva generación de la web.',
     icon: GlobeAltIcon
   },
   {
     name: 'Solidity',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Permite desarrollar aplicaciones descentralizadas con características como seguridad, transparencia y ejecución confiable de contratos para el ecosistema de Ethereum.',
     icon: ScaleIcon
   },
   {
     name: 'Rust / Substrate',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Diseñado para seguridad, rendimiento y concurrencia. Substrate es un framework escrito en Rust que permite crear blockchains personalizadas y escalables para el ecosistema de Polkadot y Kusama.',
     icon: BoltIcon
   },
   {
     name: 'Cairo / StarkNet',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Permite desarrollar aplicaciones escalables y seguras en StarkNet, con énfasis en la privacidad y la eficiencia.',
     icon: ChatBubbleBottomCenterTextIcon
   },
   {
-    name: 'Bring your own stack!',
+    name: '¡Aporta tu propia experiencia!',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Aportar tu experiencia es compartir conocimientos, perspectivas únicas y soluciones innovadoras para enriquecer a la comunidad.',
     icon: ChatBubbleBottomCenterTextIcon
   }
 ]
@@ -48,10 +48,6 @@ export default function FeaturedAreas() {
           </h2>
           <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-amber-300 sm:text-4xl">
             Áreas de estudio
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
           </p>
         </div>
 

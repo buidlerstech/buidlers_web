@@ -74,14 +74,14 @@ export default function Navigator() {
               />
             </div>
 
-            <div className="hidden md:flex text-stone-300 font-bold">
+            {/*             <div className="hidden md:flex text-stone-300 font-bold">
               <Link className="px-3" href="/about">
                 SOBRE NOSOTROS
               </Link>
               <Link className="px-3" href="/contact">
                 CONTACTO
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
