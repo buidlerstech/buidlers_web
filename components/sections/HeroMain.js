@@ -1,63 +1,39 @@
-import Image from 'next/image'
-
 export default function HeroMain() {
   return (
-    <div className="relative overflow-hidden ">
-      <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-black pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-          <svg
-            className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
-            fill="black"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
+    <div className="relative py-20">
+      {/* Añadir un contenedor principal con posición relativa */}
+      <video
+        autoPlay
+        muted
+        loop
+        className="absolute top-0 left-0 w-full object-cover h-96 sm:h-56 md:h-80 lg:h-full lg:w-full"
+      >
+        <source src="/bg/back.webm" type="video/webm" />
+      </video>
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-bold tracking-tight text-amber-50 sm:text-5xl md:text-6xl">
+          <div className="">¡Únete a Buidlers!</div>
+          <div className="mt-4 text-amber-500">
+            ¿Estás listo para construir?
+          </div>
+        </h1>
+        <div className="md:flex items-center justify-between mt-12 lg:mt-48 w-full ">
+          <div
+            className="px-6 py-4 sm:px-10 sm:py-8 rounded-xl text-center text-gray-100  shadow-amber-900 shadow-lg
+            bg-gray-900 bg-opacity-70 
+            text-base md:text-2xl max-w-xl"
           >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
-
-          <div className="relative px-2 pt-2 sm:px-2 lg:px-2"></div>
-
-          <main className="mx-auto mt-10 max-w-7xl px-8 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 lg:px-8 xl:mt-12 animate-in slide-in-from-left duration-1000">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-amber-50 sm:text-5xl md:text-6xl">
-                <div className="block xl:inline">¡Únete a Buidlers!</div>
-
-                <div
-                  className="mt-4
-                   text-amber-500 xl:inlines"
-                >
-                  ¿Estás listo para construir?
-                </div>
-              </h1>
-              <p className="mt-3 text-base text-gray-300 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Formamos el hub de desarrolladores Web3 en español donde la
-                descentralización, calidad y colaboración son parte de nuestra
-                identidad.
-              </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="mt-5 sm:mt-0 sm:ml-3 rounded-md shadow">
-                  <a
-                    href="https://discord.gg/3WcNxGagWT"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-amber-500 bg- px-8 py-3
-                     text-base font-bold text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
-                  >
-                    Unite a nosotros →
-                  </a>
-                </div>
-              </div>
-            </div>
-          </main>
+            Formamos el hub de desarrolladores Web3 en español donde la
+            descentralización, calidad y colaboración son parte de nuestra
+            identidad.
+          </div>
+          <div
+            className="flex items-center justify-center rounded-md bg-amber-500 px-8 py-4 text-base
+            text-white hover:bg-indigo-700 mt-8 md:mt-4  md:py-4 md:px-10 md:text-lg "
+          >
+            <a href="https://discord.gg/3WcNxGagWT">Unite a nosotros →</a>
+          </div>
         </div>
-      </div>
-      <div className="animate-in fade-in duration-1000 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <Image
-          className="  h-56 w-full rounded-3xl object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src={'/bg/25.png'}
-          width="1000"
-          height="1000"
-          priority="true"
-          alt=""
-        />
       </div>
     </div>
   )

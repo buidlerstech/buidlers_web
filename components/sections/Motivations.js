@@ -31,15 +31,13 @@ const features = [
 
 export default function Motivations() {
   return (
-    <div className="bg-z inc-900 py-12 mt-20 rounded-3xl">
+    <div className="bg-z inc-900 py-12 mt-10 rounded-3xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* <h2 className="text-lg font-semibold text-slate-300">
             NUESTRA MOTIVACION
           </h2> */}
           <h2 className="mt-2 text-lg font-semibold text-slate-300 leading-8 tracking-tight  sm:text-2xl">
-            {/* Es otra <i>&quot;comunidad&quot;</i> ? */}
-            {/* NUESTRA MOTIVACION */}
             Nuestras motivaciones
           </h2>
           {/* <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
