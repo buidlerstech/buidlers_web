@@ -43,9 +43,6 @@ export default function FeaturedAreas() {
     <div className="mt-14 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-lg font-semibold text-slate-500">
-            NUESTROS STACKS
-          </h2>
           <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-amber-300 sm:text-4xl">
             Áreas de estudio
           </p>

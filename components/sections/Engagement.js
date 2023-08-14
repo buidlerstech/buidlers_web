@@ -29,7 +29,12 @@ export default function Engagement() {
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
 
-          <div className="mx-auto mt-12 max-w-7xl px-8 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 lg:px-8 xl:mt-20">
+          <div
+            //  className="mx-auto mt-12 max-w-7xl px-8 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 lg:px-8 xl:mt-20"
+            className=" 
+        mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
+        "
+          >
             <div className="sm:text-center lg:text-right">
               <h3 className="text-3xl font-bold tracking-tight text-amber-50 sm:text-3xl md:text-4xl">
                 <span className="block xl:inline">

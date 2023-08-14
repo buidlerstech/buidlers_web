@@ -1,12 +1,12 @@
 import {
+  AcademicCapIcon,
   ArrowsRightLeftIcon,
+  BuildingLibraryIcon,
   ChatBubbleLeftRightIcon,
   CheckBadgeIcon,
-  WrenchScrewdriverIcon,
-  AcademicCapIcon,
   MegaphoneIcon,
   UsersIcon,
-  BuildingLibraryIcon
+  WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline'
 
 // const cards = [
@@ -92,9 +92,12 @@ export default function Proposal() {
     //     </p>
     //   </div>
     // </div>
-    <div>
+    <div
+      className=" 
+    mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
+    "
+    >
       <div className="text-center mt-14">
-        <h2 className="text-lg font-thi text-slate-500">CARÁCTER</h2>
         <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-amber-300 sm:text-4xl">
           Nuestra propuesta
         </p>
