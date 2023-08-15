@@ -1,7 +1,6 @@
 export default function HeroMain() {
   return (
     <div className="relative py-20">
-      {/* Añadir un contenedor principal con posición relativa */}
       <video
         autoPlay
         muted
