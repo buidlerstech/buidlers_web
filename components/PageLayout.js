@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-// import './globals.css';
 
 export default function PageLayout({ children }) {
   const description =
@@ -14,7 +12,7 @@ export default function PageLayout({ children }) {
 
   return (
     <>
-      <Head className={styles.container}>
+      <Head>
         <title>{fullTitle}</title>
         <meta name="robots" content="max-image-preview:large" />
         <meta name="description" content={description} />
@@ -38,6 +36,13 @@ export default function PageLayout({ children }) {
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Halant:wght@300;400;500;600;700&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>{children}</main>

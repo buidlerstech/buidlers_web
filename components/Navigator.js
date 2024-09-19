@@ -45,11 +45,13 @@ export default function Navigator() {
 
   return (
     <div className="relative z-50">
-      <div className="fixed top-0 left-0 right-0">
+      <div className=" mx-12 fixed top-0 left-0 right-0">
         <div
           className="flex filter drop-shadow-md z-50 bg-black py-4 h-20 items-center 
-        mx-auto max-w-7xl px-4 sm:px-6 lg:px-8
+        
+        
         "
+          // mx-autos max-w-7xl px-4 sm:px-6 lg:px-8
         >
           <MobileNavigator open={open} setOpen={setOpen} />
           <div className="w-3/12 flex items-center">
@@ -80,14 +82,20 @@ export default function Navigator() {
               />
             </div>
 
-            {/*             <div className="hidden md:flex text-stone-300 font-bold">
+            <div className="hidden md:flex text-stone-300 font-helvetica font-thin">
               <Link className="px-3" href="/about">
-                SOBRE NOSOTROS
+                VENUES
+              </Link>
+              <Link className="px-3" href="/about">
+                ROADMAP
+              </Link>
+              <Link className="px-3" href="/about">
+                ABOUT
               </Link>
               <Link className="px-3" href="/contact">
-                CONTACTO
+                CONTACT
               </Link>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
