@@ -60,15 +60,26 @@ export default function RootLayout({
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
+        {/* 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+         <link
+          href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+          rel="stylesheet"
+        /> */}
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin=""
+          crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Halant:wght@300;400;500;600;700&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz@1,5..1200&family=Tangerine&display=swap"
           rel="stylesheet"
         />
       </Head>

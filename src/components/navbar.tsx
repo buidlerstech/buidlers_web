@@ -13,12 +13,14 @@ const Navbar = () => {
   const navLinks = [
     { href: "/about", label: "About" },
     { href: "/venues", label: "Venues" },
-    { href: "/more", label: "More" },
+
+    { href: "/roadmap", label: "Roadmap" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm z-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <nav className="fixed top-0 left-0 right-0  backdrop-blur-xl z-50">
+      <div className="max-w-7xls mx-auto px-12">
         <div className="flex justify-between items-center h-16">
           {/* Logo area */}
           <div className="flex-shrink-0">

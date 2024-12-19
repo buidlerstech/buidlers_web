@@ -10,48 +10,60 @@
 
 import Navbar from "@/components/navbar";
 
-export default function Home() {
-  return (
-    // <PageLayout title="Buidlers.tech">
-    <div className="mx-12 bg-resd-600">
-      {/* <Navigator /> */}
-      <Navbar />
-      <div className="  w-full bg-resd-500 ">
-        {/* <HeroMain />
+{
+  /* <HeroMain />
           <Motivations />
           <FeaturedAreas />
           <Proposal />
           <Engagement />
-          <Footer /> */}
-
-        <div className="flex flex-cosl justify-between items-end  min-h-screen overflow-visible">
-          <div className="text-white mb-40 text-5xl  font-extralight tracking-tigh">
+          <Footer /> */
+}
+{
+  /* <div className="text-white mb-40 text-5xl  font -extralight tracking-tigh">
             <span className="italic playfair">Synergy</span> to bring
             <br />
             decentralization
             <br />
             to the world
-          </div>
-          {/* <div className="text-white mb-40 text-8xl tracking-tighter">
-            Creamos{' '}
+          </div> */
+}
+{
+  /* <div className="text-white mb-40 text-8xl tracking-tighter">
+            Creamos{" "}
             <span className="italic font-thin font-sserif">sin permiso,</span>
             avanzamos sin límites
-          </div> */}
-          <div
-            className="text-[180pt] tracking-tighter italic mx-2 font-extrabold text-transparent bg-clip-text"
-            style={{
-              backgroundImage: 'url("/w.png")',
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            build.
-          </div>
-          {/* Pensamiento distribuido, excelencia compartida
-          Creamos sin permiso, avanzamos sin límites */}
+          </div> */
+}
+
+export default function Home() {
+  return (
+    <div id="theWholeScreen" className="flex flex-col min-h-screen mx-12">
+      <Navbar />
+      <main className="flex-1 flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center">carousel</div>
+      </main>
+      <div id="bigFooter" className="flex justify-between items-center ">
+        <div className="text-white text-5xl font-extralight tracking-tight ">
+          <span className=" tangerine">Sinergia</span> para llevar
+          <br />
+          decentralizacion
+          <br />
+          al mundo
         </div>
+
+        <div
+          className="text-[180pt] tracking-tighter italic font-extrabold text-transparent leading-none bg-clip-text"
+          style={{
+            backgroundImage: 'url("/w.png")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          build.
+        </div>
+        {/* Pensamiento distribuido, excelencia compartida
+          Creamos sin permiso, avanzamos sin límites */}
       </div>
     </div>
-    // </PageLayout>
   );
 }
