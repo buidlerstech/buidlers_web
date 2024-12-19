@@ -1,7 +1,7 @@
-# Buidlers Website
+# Buidlers
 
-This is the initial version of our beloved platform.
+This is the monorepo of our beloved platform.
 
 More to come!
 
-(C) 2023 Buidlers.tech
+(C) 2024 Buidlers.tech

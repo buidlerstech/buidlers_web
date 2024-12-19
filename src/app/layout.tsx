@@ -1,17 +1,41 @@
-import Head from 'next/head'
+import "./globals.css";
 
-export default function PageLayout({ children }) {
-  const description =
-    'Formamos el hub de desarrolladores Web3 en español donde la descentralización, calidad y colaboración son parte de nuestra identidad.'
+import { Geist, Geist_Mono } from "next/font/google";
 
-  const site = 'Buidlẽrs.tech'
-  const title = 'Sinergia de mentes ávidas de conocimiento Web3.'
-  const image = 'https://buidlers.tech/banner.png'
+import Head from "next/head";
+import type { Metadata } from "next";
 
-  const fullTitle = `${site} | ${title}`
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const description =
+  "Formamos el hub de desarrolladores Web3 en español donde la descentralización, calidad y colaboración son parte de nuestra identidad.";
+
+const site = "Buidlẽrs.tech";
+const title = "Sinergia de mentes ávidas de conocimiento Web3.";
+const image = "https://buidlers.tech/banner.png";
+
+const fullTitle = `${site} | ${title}`;
+
+export const metadata: Metadata = {
+  title: "Buidlẽrs.tech",
+  description: "Sinergia de mentes ávidas de conocimiento Web3",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>{fullTitle}</title>
         <meta name="robots" content="max-image-preview:large" />
@@ -38,14 +62,22 @@ export default function PageLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Halant:wght@300;400;500;600;700&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
           rel="stylesheet"
         />
       </Head>
 
-      <main>{children}</main>
-    </>
-  )
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
