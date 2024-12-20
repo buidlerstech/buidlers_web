@@ -20,16 +20,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.playfair {
-  font-family: "Playfair", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
+@font-face {
+  font-family: "Ephesis";
+  src: url("/fonts/Ephesis-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.tangerine {
-  font-family: "Tangerine", serif;
-  font-weight: 400;
-  font-style: normal;
+.ephesis {
+  font-family: "Ephesis", sans-serif;
 }

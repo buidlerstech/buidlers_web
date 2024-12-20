@@ -8,7 +8,8 @@
 // import PageLayout from "../components/PageLayout";
 // import Proposal from '../components/sections/Proposal'
 
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
+import Timeline from "@/components/Timeline";
 
 {
   /* <HeroMain />
@@ -40,13 +41,14 @@ export default function Home() {
     <div id="theWholeScreen" className="flex flex-col min-h-screen mx-12">
       <Navbar />
       <main className="flex-1 flex items-center justify-center">
-        <div className="flex-1 flex items-center justify-center">carousel</div>
+        <Timeline />
       </main>
       <div id="bigFooter" className="flex justify-between items-center ">
         <div className="text-white text-5xl font-extralight tracking-tight ">
-          <span className=" tangerine">Sinergia</span> para llevar
+          <span className="text-[64pt] mr-3 italic ephesis">Sinergia</span> para
+          llevar
           <br />
-          decentralizacion
+          descentralización
           <br />
           al mundo
         </div>
