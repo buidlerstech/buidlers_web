@@ -11,12 +11,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/venues", label: "Venues" },
+    { href: "/about", label: "Acerca de" },
+    { href: "/venues", label: "Eventos" },
     { href: "/ethos", label: "Ethos" },
-
     { href: "/roadmap", label: "Roadmap" },
-    { href: "/contact", label: "Contact" },
+    { href: "/contact", label: "Contacto" },
   ];
 
   return (
@@ -25,8 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo area */}
           <div className="flex-shrink-0">
-            {/* Replace this div with your SVG logo */}
-            {/* <div className="w-32 h-8 bg-white/10 rounded" /> */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.svg" alt="Logo" className="h-8 md:h-10" />
           </div>
 
