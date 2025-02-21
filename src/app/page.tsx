@@ -15,22 +15,6 @@ import Values from "@/components/Values";
 import SocialLinks from "@/components/SocialLinks";
 
 
-{
-  /* <HeroMain />
-          <Motivations />
-          <FeaturedAreas />
-          <Proposal />
-          <Engagement />
-          <Footer /> */
-}
-{
-  /* <div className="text-white mb-40 text-8xl tracking-tighter">
-            Creamos{" "}
-            <span className="italic font-thin font-sserif">sin permiso,</span>
-            avanzamos sin límites
-          </div> */
-}
-
 export default function Home() {
   return (
     <div id="theWholeScreen" className="flex flex-col min-h-screen">

@@ -59,4 +59,6 @@ const VenueCard = memo(({
   );
 });
 
+VenueCard.displayName = 'VenueCard';
+
 export default VenueCard;

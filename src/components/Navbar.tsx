@@ -5,6 +5,7 @@ import { useMenu } from "@/hooks/useMenu";
 import { navLinks } from "@/config/navigation";
 import { DesktopMenu } from "./navigation/DesktopMenu";
 import { MobileMenu } from "./navigation/MobileMenu";
+import Image from 'next/image';
 
 const Navbar = () => {
   const { isOpen, toggleMenu, closeMenu } = useMenu();
@@ -17,7 +18,13 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             {/* Replace this div with your SVG logo */}
             {/* <div className="w-32 h-8 bg-white/10 rounded" /> */}
-            <img src="/logo.svg" alt="Logo" className="h-8 md:h-10" />
+            <Image 
+              src="/logo.svg" 
+              alt="Logo" 
+              width={40}
+              height={40}
+              className="h-8 md:h-10 w-auto"
+            />
           </div>
 
           {/* Desktop menu */}

@@ -5,7 +5,7 @@ import { useTimeline } from "@/hooks/useTimeline";
 import VenueCard from "./VenueCard";
 
 const Timeline = () => {
-  const { venues, years, selectedYear, setSelectedYear, isRewinding } = useTimeline();
+  const { venues, years, selectedYear, isRewinding } = useTimeline();
   const currentVenue = venues[0];
 
   return (

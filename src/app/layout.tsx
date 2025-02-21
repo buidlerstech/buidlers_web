@@ -1,13 +1,8 @@
 import "./globals.css";
 
-import { Geist, Geist_Mono, Playfair } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 
 import type { Metadata } from "next";
-
-const playfair = Playfair({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,7 +41,6 @@ export const metadata: Metadata = {
     description,
     images: [image],
   },
-  viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: '/favicon.ico',
   },

@@ -1,5 +1,4 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Venue } from '@/types/venue';
 import { venues, getYears } from '@/config/venues';
 
 export const useTimeline = () => {
