@@ -8,7 +8,8 @@ import { MobileMenu } from "./navigation/MobileMenu";
 import Image from 'next/image';
 
 const Navbar = () => {
-  const { isOpen, toggleMenu, closeMenu } = useMenu();
+   const { isOpen, toggleMenu, closeMenu } = useMenu();
+ 
 
   return (
     <nav className="fixed top-0 left-0 right-0 backdrop-blur-xl z-50">
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo area */}
           <div className="flex-shrink-0">
-            {/* Replace this div with your SVG logo */}
+             {/* Replace this div with your SVG logo */}
             {/* <div className="w-32 h-8 bg-white/10 rounded" /> */}
             <Image 
               src="/logo.svg" 
@@ -25,6 +26,7 @@ const Navbar = () => {
               height={40}
               className="h-8 md:h-10 w-auto"
             />
+ 
           </div>
 
           {/* Desktop menu */}
