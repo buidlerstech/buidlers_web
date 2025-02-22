@@ -1,25 +1,26 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Twitter, Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Twitter } from "lucide-react";
+
+import { motion } from "framer-motion";
 
 export default function SocialLinks() {
   const socialLinks = [
     {
       icon: Twitter,
-      href: "https://twitter.com/buidlers_",
-      label: "Twitter"
+      href: "https://github.com/buidlerstech",
+      label: "Twitter",
     },
     {
       icon: Github,
       href: "https://github.com/buidlers-of-argentina",
-      label: "Github"
+      label: "Github",
     },
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/company/buidlers",
-      label: "LinkedIn"
-    }
+      href: "https://www.linkedin.com/company/buidlers-tech/",
+      label: "LinkedIn",
+    },
   ];
 
   return (
@@ -41,4 +42,4 @@ export default function SocialLinks() {
       ))}
     </div>
   );
-} 
+}

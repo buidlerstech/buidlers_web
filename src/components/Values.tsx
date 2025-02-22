@@ -1,18 +1,20 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Values() {
   const values = [
     {
       title: "Misión",
-      description: "Unir y potenciar una comunidad de desarrolladores Web3, impulsando la colaboración y el aprendizaje colectivo sin buscar beneficio económico de nuestros miembros.",
-      icon: "🎯"
+      description:
+        "Unir y potenciar una comunidad de desarrolladores Web3, impulsando la colaboración y el aprendizaje colectivo sin buscar beneficio económico de nuestros miembros.",
+      icon: "🎯",
     },
     {
       title: "Visión",
-      description: "Ser un faro de colaboración, innovación y ética en el espacio Web3, liderando el camino hacia un ecosistema digital más inclusivo y equitativo.",
-      icon: "👁️"
+      description:
+        "Ser un faro de colaboración, innovación y ética en el espacio Web3, liderando el camino hacia un ecosistema digital más inclusivo y equitativo.",
+      icon: "👁️",
     },
     {
       title: "Valores",
@@ -20,33 +22,36 @@ export default function Values() {
         "Autenticidad y transparencia",
         "Claridad de propósito",
         "Integridad y principios",
-        "Inclusión y colaboración"
+        "Inclusión y colaboración",
       ],
-      icon: "💫"
-    }
+      icon: "💫",
+    },
   ];
 
   const ethos = [
     {
       title: "Autenticidad",
-      description: "Somos un colectivo auténtico que rechaza las estructuras corporativas tradicionales y promueve la transparencia en todas nuestras acciones.",
-      icon: "🌟"
+      description:
+        "Somos un colectivo auténtico que rechaza las estructuras corporativas tradicionales y promueve la transparencia en todas nuestras acciones.",
+      icon: "🌟",
     },
     {
       title: "Propósito",
-      description: "Construimos un ecosistema sano para los que estamos y para los que vienen, enfocándonos en el valor real más allá del precio.",
-      icon: "⚖️"
+      description:
+        "Construimos un ecosistema sano para los que estamos y para los que vienen, enfocándonos en el valor real más allá del precio.",
+      icon: "⚖️",
     },
     {
       title: "Inteligencia Colectiva",
-      description: "Trabajamos juntos para dar valor al ecosistema, promoviendo el conocimiento y el desarrollo de soluciones Web3 innovadoras.",
-      icon: "🔓"
-    }
+      description:
+        "Trabajamos juntos para dar valor al ecosistema, promoviendo el conocimiento y el desarrollo de soluciones Web3 innovadoras.",
+      icon: "🔓",
+    },
   ];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -54,9 +59,9 @@ export default function Values() {
       {/* Valores principales */}
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16">
-          Nuestros Pilares Fundamentales
+          Pilares Fundamentales
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {values.map((value, index) => (
             <motion.div
@@ -84,10 +89,8 @@ export default function Values() {
         </div>
 
         {/* Ethos */}
-        <h2 className="text-4xl font-bold text-center mb-16">
-          Nuestro Ethos
-        </h2>
-        
+        <h2 className="text-4xl font-bold text-center mb-16"> Ethos</h2>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {ethos.map((item, index) => (
             <motion.div
@@ -105,7 +108,12 @@ export default function Values() {
             </motion.div>
           ))}
         </div>
+        <pre>
+          {`
+  
+  `}
+        </pre>
       </div>
     </div>
   );
-} 
+}
