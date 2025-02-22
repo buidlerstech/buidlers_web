@@ -6,8 +6,20 @@
   :root {
     /* --background: #ffffff;
     --foreground: #171717; */
-    --background: #0a0a0a;
+    /* --background: #0a0a0a; */
     --foreground: #ededed;
+
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(46, 100, 138, 1) 88%,
+      rgba(0, 0, 0, 1) 99%
+    );
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
@@ -64,9 +76,12 @@ body {
   transform-origin: center;
   transition: transform 0.5s ease;
   z-index: -1;
-  color: rgba(0, 123, 255, 0.081);
 }
 
-.scroll-effect {
-  height: 200vh;
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.hover\:rotate-y-6:hover {
+  transform: rotateY(16deg);
 }

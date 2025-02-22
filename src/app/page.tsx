@@ -91,20 +91,19 @@ export default function Home() {
           <Values />
         </section>
       </main>
-      <div className="scroll-effect">
-        <div
-          className="background-svg"
-          style={{
-            transform: `translateY(${scrollY / -2}px) translateX(${
-              scrollY / -4
-            }px) scale(${1 + scrollY / 1000}) rotateX(${Math.min(
-              scrollY / 10,
-              30,
-            )}deg) perspective(${800 - scrollY / 10}px)`,
-            transformOrigin: "center center",
-          }}
-        />
-      </div>
+      <div
+        className="background-svg"
+        style={{
+          transform: `rotate3d(131, 131, 0, 21deg) translateY(${
+            scrollY / -2
+          }px) translateX(${scrollY / -4}px) scale(${
+            1 + scrollY / 1000
+          }) rotateX(${Math.min(scrollY / 10, 30)}deg) perspective(${
+            800 - scrollY / 10
+          }px)`,
+          transformOrigin: "center center",
+        }}
+      ></div>
     </div>
   );
 }
