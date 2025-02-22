@@ -1,32 +1,32 @@
-interface VenueCardProps {
-  venue: {
-    title: string;
-    description: string;
-    location: string;
-    assistants: number;
-    m2: number;
-    icon: string;
-    public: string;
-  };
-}
+import { memo, useMemo } from "react";
+import { Venue } from '@/types/venue';
 
-export default function VenueCard({ venue }: VenueCardProps) {
+const VenueCard = memo(({
+  title,
+  description,
+  location,
+  assistants,
+  m2,
+  icon,
+  public: audience
+}: Venue) => {
+  const imageUrl = useMemo(() => 
+    `/w.png?height=228&width=256`, 
+    []
+  );
+
   return (
     <div className="bg overflow-hidden flex pt-8 justify-center gap-4 p-4">
       {/* First Subcard: Image of the venue */}
-
       <div
-        className="relative h-80 w-96"
+        className="relative h-80 w-96 rounded-xl overflow-hidden"
         style={{
-          backgroundImage: `url(/w.png?height=228&width=256)`,
+          backgroundImage: `url(${imageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          borderRadius: "0.75rem",
-          overflow: "hidden",
         }}
       >
-        <p className="text-lg p-4 font-medium text-white">{venue.location}</p>
+        <p className="text-lg p-4 font-medium text-white">{location}</p>
       </div>
 
       <div className="flex flex-col gap-4">
@@ -36,10 +36,10 @@ export default function VenueCard({ venue }: VenueCardProps) {
             <div className="flex items-center">
               <div>
                 <p className="text-7xl font-bold text-left">
-                  {venue.assistants.toLocaleString()}
+                  {assistants.toLocaleString()}
                 </p>
                 <p className="text-sm text-right">
-                  {venue.public} {venue.icon}
+                  {audience} {icon}
                 </p>
               </div>
             </div>
@@ -47,14 +47,18 @@ export default function VenueCard({ venue }: VenueCardProps) {
         </div>
 
         {/* Third Subcard: Location name */}
-        <div className="text-center bg-amber-700 p-6 h-40 rounded-xl ">
+        <div className="text-center bg-amber-700 p-6 h-40 rounded-xl">
           <div className="mt-auto text-right">
-            <p className="text-2xl font-medium mb-1 text-left">{venue.title}</p>
-            <p className="text-sm ">{venue.description}</p>
-            <p className="text-2xl mt-6 italic">{venue.m2} m2</p>
+            <p className="text-2xl font-medium mb-1 text-left">{title}</p>
+            <p className="text-sm">{description}</p>
+            <p className="text-2xl mt-6 italic">{m2} m2</p>
           </div>
         </div>
       </div>
     </div>
   );
-}
+});
+
+VenueCard.displayName = 'VenueCard';
+
+export default VenueCard;
