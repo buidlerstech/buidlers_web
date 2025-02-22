@@ -1,5 +1,14 @@
 "use client";
 
+import {
+  BrainIcon,
+  HeartHandshakeIcon,
+  IdCardIcon,
+  ScanEye,
+  ShieldCheckIcon,
+  SparklesIcon,
+} from "lucide-react";
+
 import { motion } from "framer-motion";
 
 export default function Values() {
@@ -8,13 +17,13 @@ export default function Values() {
       title: "Misión",
       description:
         "Unir y potenciar una comunidad de desarrolladores Web3, impulsando la colaboración y el aprendizaje colectivo sin buscar beneficio económico de nuestros miembros.",
-      icon: "🎯",
+      icon: <SparklesIcon height={140} width={140} strokeWidth="0.5px" />,
     },
     {
       title: "Visión",
       description:
         "Ser un faro de colaboración, innovación y ética en el espacio Web3, liderando el camino hacia un ecosistema digital más inclusivo y equitativo.",
-      icon: "👁️",
+      icon: <ScanEye height={140} width={140} strokeWidth="0.5px" />,
     },
     {
       title: "Valores",
@@ -24,7 +33,7 @@ export default function Values() {
         "Integridad y principios",
         "Inclusión y colaboración",
       ],
-      icon: "💫",
+      icon: <HeartHandshakeIcon height={140} width={140} strokeWidth="0.5px" />,
     },
   ];
 
@@ -33,19 +42,19 @@ export default function Values() {
       title: "Autenticidad",
       description:
         "Somos un colectivo auténtico que rechaza las estructuras corporativas tradicionales y promueve la transparencia en todas nuestras acciones.",
-      icon: "🌟",
+      icon: <IdCardIcon height={140} width={140} strokeWidth="0.5px" />,
     },
     {
       title: "Propósito",
       description:
         "Construimos un ecosistema sano para los que estamos y para los que vienen, enfocándonos en el valor real más allá del precio.",
-      icon: "⚖️",
+      icon: <ShieldCheckIcon height={140} width={140} strokeWidth="0.5px" />,
     },
     {
       title: "Inteligencia Colectiva",
       description:
         "Trabajamos juntos para dar valor al ecosistema, promoviendo el conocimiento y el desarrollo de soluciones Web3 innovadoras.",
-      icon: "🔓",
+      icon: <BrainIcon height={140} width={140} strokeWidth="0.5px" />,
     },
   ];
 
@@ -71,19 +80,27 @@ export default function Values() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="bg-gradient-to-br from-amber-900/30 to-amber-800/20 p-8 rounded-2xl backdrop-blur-sm"
+              className="bg-gradient-to-br  from-amber-100/30 to-amber-900/20 py-8 
+              rounded-2xl backdrop-blur-sm transform transition-transform duration-300"
             >
-              <div className="text-4xl mb-4">{value.icon}</div>
-              <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
-              {value.description ? (
-                <p className="text-gray-300">{value.description}</p>
-              ) : (
-                <ul className="list-disc list-inside text-gray-300 space-y-2">
-                  {value.items?.map(item => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              )}
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                {value.title}
+              </h3>
+
+              <div className="flex gap-5 items-center pl-4 pr-6">
+                <div>{value.icon}</div>
+                <div className="flex flex-col  text-left tracking-tight">
+                  {value.description ? (
+                    <p className="text-gray-300">{value.description}</p>
+                  ) : (
+                    <ul className="list-disc list-inside text-gray-300 space-y-2">
+                      {value.items?.map(item => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -100,11 +117,20 @@ export default function Values() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="bg-gradient-to-br from-amber-950/30 to-amber-900/20 p-8 rounded-2xl backdrop-blur-sm"
+              className="bg-gradient-to-br  from-amber-100/30 to-amber-900/20 py-8 
+              rounded-2xl backdrop-blur-sm transform transition-transform duration-300"
             >
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-              <p className="text-gray-300">{item.description}</p>
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                {item.title}
+              </h3>
+
+              <div className="flex gap-5 items-center pl-4 pr-6">
+                <div>{item.icon}</div>
+
+                <div className="flex flex-col text-left tracking-tight">
+                  <p className="text-gray-300">{item.description}</p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
