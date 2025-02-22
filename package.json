@@ -1,8 +1,7 @@
 {
-  "name": "web-buidlers",
+  "name": "buidlers-web",
   "version": "0.2.0",
   "private": true,
-  "author": "Leo Sagan @EthSagan",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,27 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.13",
-    "eslint": "8.26.0",
-    "eslint-config-next": "13.0.2",
-    "next": "13.0.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "next": "15.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.2",
-    "tailwindcss-animate": "^1.0.5"
-  },
-  "prettier": {
-    "arrowParens": "avoid",
-    "quoteProps": "consistent",
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none",
-    "html.format.wrapAttributes": "auto",
-    "printWidth": 80
+    "@eslint/eslintrc": "^3",
+    "@types/estree": "^1.0.6",
+    "@types/json-schema": "^7.0.15",
+    "@types/node": "^20.17.10",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
