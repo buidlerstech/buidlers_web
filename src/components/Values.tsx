@@ -108,11 +108,6 @@ export default function Values() {
             </motion.div>
           ))}
         </div>
-        <pre>
-          {`
-  
-  `}
-        </pre>
       </div>
     </div>
   );
