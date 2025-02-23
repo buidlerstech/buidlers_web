@@ -1,26 +1,36 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="flex gap-8 items-center justify-center ">
-        <h2 className="text-100 font-bold animate-extrude">404</h2>
-        <hr className="border-t-2 border-white/50" />
-        <br />
-        <div className="text-white text-2xl sm:text-4xl lg:text-5xl font-extralight tracking-tight text-center md:text-left">
-          <span className="text-[42pt] sm:text-[48pt] lg:text-[64pt] italic ephesis block mb-2 md:mb-0 md:inline">
-            Oops!&nbsp;
-          </span>
-          <div className="mt-2 md:mt-4">El recurso buscado</div>
-          <div className="mt-2 md:mt-4">no está disponible</div>
-        </div>
-      </div>
-      <Link
-        href="/"
-        className="mt-28 px-6 py-3 text-2xl border border-stone-500 text-white rounded-lg hover:bg-stone-700 transition"
+    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="bg-black/30 backdrop-blur-sm rounded-xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-white/5"
       >
-        Home
-      </Link>
+        <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+          <h2 className="text-[80pt] md:text-[100pt] font-bold">404</h2>
+          <div className="h-24 w-px bg-white/20 hidden md:block" />
+          <div className="text-white text-2xl sm:text-3xl lg:text-4xl font-extralight tracking-tight text-center md:text-left">
+            <span className="text-[36pt] sm:text-[42pt] lg:text-[48pt] italic ephesis block mb-2 md:mb-4">
+              Oops!&nbsp;
+            </span>
+            <div className="mt-2">El recurso buscado</div>
+            <div className="mt-2">no está disponible</div>
+          </div>
+        </div>
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/"
+            className="px-6 py-3 text-xl border border-white/20 text-white rounded-lg hover:bg-white/5 transition-all duration-300"
+          >
+            Volver al inicio
+          </Link>
+        </div>
+      </motion.div>
     </div>
   );
 }

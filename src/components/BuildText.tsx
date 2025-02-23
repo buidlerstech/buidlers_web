@@ -3,7 +3,7 @@
 const BuildText = () => {
   return (
     <div
-      className="text-[60pt] sm:text-[90pt] md:text-[120pt] lg:text-[150pt] tracking-tighter italic font-extrabold text-transparent leading-none bg-clip-text hover:cursor-default transform transition-transform duration-300 text-center md:text-left"
+      className="text-[45pt] xs:text-[56pt] sm:text-[56pt] md:text-[60pt] lg:text-[100pt] tracking-tighter italic font-extrabold text-transparent leading-none bg-clip-text hover:cursor-default transform transition-transform duration-300 text-center md:text-left w-full"
       style={{
         backgroundImage: 'url("/w.png")',
         backgroundSize: "120% 120%",

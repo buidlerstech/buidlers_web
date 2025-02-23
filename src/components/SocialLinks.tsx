@@ -1,25 +1,34 @@
 "use client";
 
-import { Github, Linkedin, Twitter } from "lucide-react";
-
+import { SiGithub, SiLinkedin, SiX, SiDiscord, SiTelegram } from "react-icons/si";
 import { motion } from "framer-motion";
 
 export default function SocialLinks() {
   const socialLinks = [
     {
-      icon: Twitter,
-      href: "https://github.com/buidlerstech",
+      icon: SiX,
+      href: "https://x.com/buidlerstech",
       label: "Twitter",
     },
     {
-      icon: Github,
-      href: "https://github.com/buidlers-of-argentina",
+      icon: SiGithub,
+      href: "https://github.com/buidlerstech",
       label: "Github",
     },
     {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/company/buidlers-tech/",
+      icon: SiLinkedin,
+      href: "https://www.linkedin.com/company/buidlers-tech",
       label: "LinkedIn",
+    },
+    {
+      icon: SiDiscord,
+      href: "https://discord.gg/T3apuTrSys",
+      label: "Discord",
+    },
+    {
+      icon: SiTelegram,
+      href: "https://t.me/buidlerstech",
+      label: "Telegram",
     },
   ];
 

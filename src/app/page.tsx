@@ -1,12 +1,3 @@
-// import CommunitySlider from '../components/sections/CommunitySlider'
-// import Engagement from '../components/sections/Engagement'
-// import FeaturedAreas from '../components/sections/FeaturedAreas'
-// import Footer from '../components/Footer'
-// import HeroMain from '../components/sections/HeroMain'
-// import Motivations from '../components/sections/Motivations'
-// import Navigator from "../components/Navigator";
-// import PageLayout from "../components/PageLayout";
-// import Proposal from '../components/sections/Proposal'
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -46,16 +37,22 @@ export default function Home() {
           </div>
 
           {/* Main Content */}
-          <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-32 items-center justify-center w-full max-w-6xl">
-            <div className="text-white text-2xl sm:text-4xl lg:text-5xl font-extralight tracking-tight text-center md:text-left">
-              <span className="text-[42pt] sm:text-[48pt] lg:text-[64pt] italic ephesis block mb-2 md:mb-0 md:inline">
-                Sinergia&nbsp;
-              </span>{" "}
-              <span className="block md:inline">para llevar</span>
-              <div className="mt-2 md:mt-4">descentralización</div>
-              <div className="mt-2 md:mt-4">al mundo</div>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 items-center justify-center w-full max-w-6xl mx-auto px-4 md:px-8 md:translate-x-[10%]">
+            <div className="text-white text-2xl xs:text-3xl sm:text-3xl md:text-3xl lg:text-4xl font-extralight tracking-tight text-center md:text-left lg:flex-1 w-full md:w-1/2">
+              <div className="flex flex-col md:flex-row items-center md:items-baseline gap-2 md:gap-4">
+                <span className="text-[35pt] xs:text-[45pt] sm:text-[45pt] md:text-[40pt] lg:text-[55pt] italic ephesis whitespace-nowrap">
+                  Sinergia
+                </span>
+                <span className="whitespace-nowrap">para llevar</span>
+              </div>
+              <div className="mt-2">
+                descentralización
+              </div>
+              <div className="mt-2">
+                al mundo
+              </div>
             </div>
-            <div className="w-full flex justify-center md:block md:w-auto overflow-hidden">
+            <div className="w-full md:w-1/2 flex justify-center lg:flex-1 md:justify-end">
               <BuildText />
             </div>
           </div>
