@@ -2,12 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['buidlers.tech'],
-    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'buidlers.tech',
+      },
+    ],
   },
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['framer-motion'],
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
   },
 };
 
