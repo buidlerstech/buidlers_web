@@ -17,13 +17,27 @@ export default function Values() {
       title: "Misión",
       description:
         "Unir y potenciar una comunidad de desarrolladores Web3, impulsando la colaboración y el aprendizaje colectivo sin buscar beneficio económico de nuestros miembros.",
-      icon: <SparklesIcon height={80} width={80} strokeWidth="1px" className="text-white/80" />,
+      icon: (
+        <SparklesIcon
+          height={80}
+          width={80}
+          strokeWidth="1px"
+          className="text-white/80"
+        />
+      ),
     },
     {
       title: "Visión",
       description:
         "Ser un faro de colaboración, innovación y ética en el espacio Web3, liderando el camino hacia un ecosistema digital más inclusivo y equitativo.",
-      icon: <ScanEye height={80} width={80} strokeWidth="1px" className="text-white/80" />,
+      icon: (
+        <ScanEye
+          height={80}
+          width={80}
+          strokeWidth="1px"
+          className="text-white/80"
+        />
+      ),
     },
     {
       title: "Valores",
@@ -33,7 +47,14 @@ export default function Values() {
         "Integridad y principios",
         "Inclusión y colaboración",
       ],
-      icon: <HeartHandshakeIcon height={80} width={80} strokeWidth="1px" className="text-white/80" />,
+      icon: (
+        <HeartHandshakeIcon
+          height={80}
+          width={80}
+          strokeWidth="1px"
+          className="text-white/80"
+        />
+      ),
     },
   ];
 
@@ -42,41 +63,62 @@ export default function Values() {
       title: "Autenticidad",
       description:
         "Somos un colectivo auténtico que rechaza las estructuras corporativas tradicionales y promueve la transparencia en todas nuestras acciones.",
-      icon: <IdCardIcon height={80} width={80} strokeWidth="1px" className="text-white/80" />,
+      icon: (
+        <IdCardIcon
+          height={80}
+          width={80}
+          strokeWidth="1px"
+          className="text-white/80"
+        />
+      ),
     },
     {
       title: "Propósito",
       description:
         "Construimos un ecosistema sano para los que estamos y para los que vienen, enfocándonos en el valor real más allá del precio.",
-      icon: <ShieldCheckIcon height={80} width={80} strokeWidth="1px" className="text-white/80" />,
+      icon: (
+        <ShieldCheckIcon
+          height={80}
+          width={80}
+          strokeWidth="1px"
+          className="text-white/80"
+        />
+      ),
     },
     {
       title: "Inteligencia Colectiva",
       description:
         "Trabajamos juntos para dar valor al ecosistema, promoviendo el conocimiento y el desarrollo de soluciones Web3 innovadoras.",
-      icon: <BrainIcon height={80} width={80} strokeWidth="1px" className="text-white/80" />,
+      icon: (
+        <BrainIcon
+          height={80}
+          width={80}
+          strokeWidth="1px"
+          className="text-white/80"
+        />
+      ),
     },
   ];
 
   const cardVariants = {
-    initial: { 
-      opacity: 0, 
+    initial: {
+      opacity: 0,
       y: 20,
-      transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)"
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)"
+      transform: "perspective(1000px) rotateX(0deg) rotateY(15deg) ",
     },
-    hover: { 
-      transform: "perspective(1000px) rotateX(8deg) rotateY(8deg) scale(1.05)",
+    hover: {
+      transform: "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.2)",
+
       boxShadow: "5px 5px 20px rgba(255, 255, 255, 0.1)",
-      transition: { 
-        duration: 0.4, 
-        ease: [0.43, 0.13, 0.23, 0.96]
-      }
-    }
+      transition: {
+        duration: 0.4,
+        ease: [0.43, 0.13, 0.23, 0.96],
+      },
+    },
   };
 
   return (
@@ -100,12 +142,16 @@ export default function Values() {
               >
                 <div className="flex flex-col items-center text-center gap-4 md:gap-3">
                   <div className="mb-2">{value.icon}</div>
-                  <h3 className="text-2xl md:text-xl lg:text-2xl font-light mb-3">{value.title}</h3>
+                  <h3 className="text-2xl md:text-xl lg:text-2xl font-light mb-3">
+                    {value.title}
+                  </h3>
                   {value.description ? (
-                    <p className="text-sm text-white/70 leading-relaxed">{value.description}</p>
+                    <p className="text-sm text-white/70 leading-relaxed">
+                      {value.description}
+                    </p>
                   ) : (
                     <ul className="text-sm text-white/70 space-y-2">
-                      {value.items?.map((item) => (
+                      {value.items?.map(item => (
                         <li key={item}>{item}</li>
                       ))}
                     </ul>
@@ -132,8 +178,12 @@ export default function Values() {
               >
                 <div className="flex flex-col items-center text-center gap-4 md:gap-3">
                   <div className="mb-2">{item.icon}</div>
-                  <h3 className="text-2xl md:text-xl lg:text-2xl font-light mb-3">{item.title}</h3>
-                  <p className="text-sm text-white/70 leading-relaxed">{item.description}</p>
+                  <h3 className="text-2xl md:text-xl lg:text-2xl font-light mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-white/70 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </motion.div>
             ))}
