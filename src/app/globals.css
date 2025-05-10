@@ -36,10 +36,12 @@ body {
   src: url("/fonts/Ephesis-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .ephesis {
-  font-family: "Ephesis", cursive;
+  font-family: var(--font-ephesis), cursive;
+  font-display: swap;
 }
 
 @keyframes extrude {
