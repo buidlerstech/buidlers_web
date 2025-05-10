@@ -1,17 +1,17 @@
-import { DesktopMenuProps } from '@/types/navigation';
+import { DesktopMenuProps } from "@/types/navigation";
 
 export const DesktopMenu = ({ links }: DesktopMenuProps) => {
   return (
-    <div className="hidden md:flex space-x-8">
-      {links.map(link => (
+    <div className="hidden md:flex space-x-8 text-sm font-semibold tracking-tight">
+      {links.map((link) => (
         <a
           key={link.href}
           href={link.href}
-          className="text-white hover:text-gray-300 transition-colors"
+          className="text-stone-400 hover:text-stone-200 transition-colors"
         >
           {link.label}
         </a>
       ))}
     </div>
   );
-}; 
+};

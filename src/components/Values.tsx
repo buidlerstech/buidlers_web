@@ -125,46 +125,41 @@ export default function Values() {
     <div className="py-16 px-4 md:px-8">
       <div className="max-w-5xl mx-auto space-y-32">
         {/* Pilares Fundamentales */}
-        <div>
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Pilares Fundamentales
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 lg:gap-6">
-            {values.map((value, index) => (
-              <motion.div
-                key={value.title}
-                variants={cardVariants}
-                initial="initial"
-                animate="visible"
-                whileHover="hover"
-                transition={{ delay: index * 0.2 }}
-                className="bg-black/30 backdrop-blur-sm rounded-xl p-6 md:p-4 lg:p-5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-white/5"
-              >
-                <div className="flex flex-col items-center text-center gap-4 md:gap-3">
-                  <div className="mb-2">{value.icon}</div>
-                  <h3 className="text-2xl md:text-xl lg:text-2xl font-light mb-3">
-                    {value.title}
-                  </h3>
-                  {value.description ? (
-                    <p className="text-sm text-white/70 leading-relaxed">
-                      {value.description}
-                    </p>
-                  ) : (
-                    <ul className="text-sm text-white/70 space-y-2">
-                      {value.items?.map(item => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 lg:gap-6">
+          {values.map((value, index) => (
+            <motion.div
+              key={value.title}
+              variants={cardVariants}
+              initial="initial"
+              animate="visible"
+              whileHover="hover"
+              transition={{ delay: index * 0.2 }}
+              className="bg-black/30 backdrop-blur-sm rounded-xl p-6 md:p-4 lg:p-5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-white/5"
+            >
+              <div className="flex flex-col items-center text-center gap-4 md:gap-3">
+                <div className="mb-2">{value.icon}</div>
+                <h3 className="text-2xl md:text-xl lg:text-2xl font-light mb-3">
+                  {value.title}
+                </h3>
+                {value.description ? (
+                  <p className="text-sm text-white/70 leading-relaxed">
+                    {value.description}
+                  </p>
+                ) : (
+                  <ul className="text-sm text-white/70 space-y-2">
+                    {value.items?.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </motion.div>
+          ))}
         </div>
 
         {/* Ethos */}
-        <div>
-          <h2 className="text-4xl font-bold text-center mb-16">Ethos</h2>
+        <div id="ethos">
+          <h2 className="text-2xl text-center mb-16">Ethos</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 lg:gap-6">
             {ethos.map((item, index) => (
               <motion.div

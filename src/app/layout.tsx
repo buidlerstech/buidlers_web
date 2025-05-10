@@ -1,8 +1,15 @@
 import "./globals.css";
-
 import { Geist, Geist_Mono } from "next/font/google";
-
+import localFont from "next/font/local";
 import type { Metadata } from "next";
+
+const ephesis = localFont({
+  src: "../../public/fonts/Ephesis-Regular.ttf",
+  variable: "--font-ephesis",
+  display: "swap",
+  preload: true,
+  fallback: ["cursive"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,28 +37,28 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: 'https://buidlers.tech',
+    url: "https://buidlers.tech",
     siteName: site,
     images: [{ url: image }],
-    type: 'website',
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title,
     description,
     images: [image],
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
 
 export const viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: '#0a0a0a'
+  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({
@@ -61,9 +68,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
- 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ephesis.variable} antialiased`}
       >
         {children}
       </body>

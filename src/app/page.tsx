@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import BuildText from "@/components/BuildText";
 import Navbar from "@/components/Navbar";
 import SocialLinks from "@/components/SocialLinks";
-import Timeline from "@/components/Timeline";
+// import Timeline from "@/components/Timeline";
 import Values from "@/components/Values";
 
 export default function Home() {
@@ -45,12 +45,8 @@ export default function Home() {
                 </span>
                 <span className="whitespace-nowrap">para llevar</span>
               </div>
-              <div className="mt-2">
-                descentralización
-              </div>
-              <div className="mt-2">
-                al mundo
-              </div>
+              <div className="mt-2">descentralización</div>
+              <div className="mt-2">al mundo</div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center lg:flex-1 md:justify-end">
               <BuildText />
@@ -63,10 +59,20 @@ export default function Home() {
               <SocialLinks />
             </div>
           </div>
+
+          <div className="absolute bottom-10">
+            <a
+              target="_blank"
+              className=" bg-amber-700 text-white px-4 py-2 rounded-full  transition-all duration-300 tracking-tight text-center"
+              href="https://discord.gg/T3apuTrSys"
+            >
+              Join our Discord
+            </a>
+          </div>
         </section>
 
         {/* Timeline Section */}
-        <section
+        {/* <section
           id="divTimeline"
           className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8"
         >
@@ -75,15 +81,15 @@ export default function Home() {
           </div>
 
           <Timeline />
-        </section>
+        </section> */}
 
-        {/* Values Section */}
+        {/* Ethos Section */}
         <section
-          id="divValues"
+          id="about"
           className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8"
         >
-          <div className="text-white text-2xl mb-20 sm:text-4xl lg:text-5xl font-extralight tracking-tight text-center md:text-left">
-            <div className="mt-2 md:mt-4">Sobre nosotros</div>
+          <div className="text-white text-2xl mt-20 font-extralight tracking-tight text-center md:text-left">
+            Sobre nosotros
           </div>
           <Values />
         </section>
