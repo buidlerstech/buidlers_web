@@ -1,0 +1,39 @@
+{
+  "country": "Bolivia",
+  "motto": "Web3 con identidad Andina",
+  "logo": "https://picsum.photos/100",
+  "hero_image": "https://picsum.photos/1000/1000",
+  "about_us": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  "links": {
+    "instagram": "https://www.instagram.com/bolivia",
+    "facebook": "https://www.facebook.com/bolivia",
+    "x": "https://www.x.com/bolivia",
+    "linkedin": "https://www.linkedin.com/bolivia",
+    "telegram": "https://www.telegram.com/bolivia",
+    "email": "mailto:bolivia@gmail.com"
+  },
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "image": "https://picsum.photos/1000/1000?random=1"
+    },
+    {
+      "name": "Project 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "image": "https://picsum.photos/1000/1000?random=2"
+    }
+  ],
+  "venues": [
+    {
+      "name": "Venue 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "image": "https://picsum.photos/1000/1000?random=3"
+    },
+    {
+      "name": "Venue 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "image": "https://picsum.photos/1000/1000?random=4"
+    }
+  ]
+}
