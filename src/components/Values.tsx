@@ -134,7 +134,9 @@ export default function Values() {
               animate="visible"
               whileHover="hover"
               transition={{ delay: index * 0.2 }}
-              className="bg-black/30 backdrop-blur-sm rounded-xl p-6 md:p-4 lg:p-5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-white/5"
+              className="bg-black/30 backdrop-blur-sm rounded-xl p-6 md:p-4 lg:p-5
+               border border-white/10 hover:border-white/20 
+               transition-all duration-300 hover:shadow-lg hover:shadow-white/5"
             >
               <div className="flex flex-col items-center text-center gap-4 md:gap-3">
                 <div className="mb-2">{value.icon}</div>

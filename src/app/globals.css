@@ -39,8 +39,72 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Judson";
+  src: url("/fonts/Judson-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Judson";
+  src: url("/fonts/Judson-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Judson";
+  src: url("/fonts/Judson-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oranienbaum";
+  src: url("/fonts/Oranienbaum-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 .ephesis {
   font-family: var(--font-ephesis), cursive;
+  font-display: swap;
+}
+
+.judson {
+  font-family: "Judson", serif;
+  font-display: swap;
+}
+
+.oranienbaum {
+  font-family: "Oranienbaum", serif;
+  font-display: swap;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
   font-display: swap;
 }
 

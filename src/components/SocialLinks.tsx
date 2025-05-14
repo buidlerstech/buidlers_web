@@ -1,6 +1,6 @@
 "use client";
 
-import { SiGithub, SiLinkedin, SiX, SiDiscord, SiTelegram } from "react-icons/si";
+import { SiLinkedin, SiX, SiDiscord, SiTelegram } from "react-icons/si";
 import { motion } from "framer-motion";
 
 export default function SocialLinks() {
@@ -9,11 +9,6 @@ export default function SocialLinks() {
       icon: SiX,
       href: "https://x.com/buidlerstech",
       label: "Twitter",
-    },
-    {
-      icon: SiGithub,
-      href: "https://github.com/buidlerstech",
-      label: "Github",
     },
     {
       icon: SiLinkedin,

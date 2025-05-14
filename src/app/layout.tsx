@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Formamos el hub de desarrolladores Web3 en español donde la descentralización, calidad y colaboración son parte de nuestra identidad.";
+  "Somos el hub de desarrolladores Web3 en español donde la descentralización, calidad y colaboración son parte de nuestra identidad.";
 
 const site = "Buidlẽrs.tech";
 const title = "Sinergia de mentes ávidas de conocimiento Web3.";

@@ -1,0 +1,44 @@
+{
+  "upcoming": [
+    {
+      "tag": "Developers space",
+      "name": "ETH House Argentina",
+      "date": "2025-12-11",
+      "location": "🇦🇷 Buenos Aires, Argentina",
+      "heading": "Es el espacio de ETH en Buenos Aires para aprender y ayudar a construir soluciones con tecnología Ethereum.",
+      "description": "Un espacio donde la colaboración, el intercambio de conocimientos y la innovación se dan la mano con un enfoque 100% Ethereum.",
+      "link": "https://lu.ma/123",
+      "image": "https://picsum.photos/100/201"
+    },
+    {
+      "tag": "Conference",
+      "name": "Ethereum Argentina",
+      "date": "2024-01-02",
+      "location": "🇦🇷 Buenos Aires, Argentina",
+      "heading": "Tierra de builders",
+      "description": "A a non-profit conference, which seeks to improve and expand the ecosystem, fostering the exchange of knowledge and strengthening the network of contacts between participants. An ideal space to establish valuable connections and learn from industry leaders, providing a unique opportunity to interact with the community.",
+      "image": "https://picsum.photos/200/600",
+      "link": "https://lu.ma/1233"
+    },
+    {
+      "tag": "Conference",
+      "name": "Polkadot Decoded BA",
+      "date": "2024-01-02",
+      "location": "🇦🇷 Buenos Aires, Argentina",
+      "heading": "El mundo DOT Web3 se reune en Buenos Aires",
+      "description": "Una oportunidad para conocer a los lideres de la comunidad Polkadot y aprender sobre la tecnología y la cultura blockchain.",
+      "image": "https://picsum.photos/200/300",
+      "link": "https://lu.ma/1233"
+    },
+    {
+      "tag": "Conference",
+      "name": "DevConnect Argentina 2025",
+      "date": "2024-01-02",
+      "location": "🇦🇷 Buenos Aires, Argentina",
+      "heading": "You're a builder: Connect with other builders at the Cowork, showcase your app at the Ethereum World's Fair, and meet your users.",
+      "description": "Devconnect ARG is an Ethereum World’s Fair, a week of showcased apps, coworking, and community events across Buenos Aires, all working to bring Argentina onchain.",
+      "image": "https://picsum.photos/200/500",
+      "link": "https://lu.ma/1233"
+    }
+  ]
+}

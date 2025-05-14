@@ -13,15 +13,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 backdrop-blur-xl z-50">
       <div className="max-w-7xls mx-auto px-12">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           {/* Logo area */}
           <div className="flex-shrink-0">
             <Image
               src="/logo.svg"
               alt="Logo"
-              width={40}
-              height={40}
-              className="h-8 md:h-10 w-auto"
+              width={30}
+              height={30}
+              className="h-6 md:h-8 w-auto"
             />
           </div>
 
