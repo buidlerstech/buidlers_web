@@ -16,6 +16,7 @@ export default function Home() {
   const [systemData, setSystemData] = useState<SystemData>({
     timestamp: new Date(),
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
     // get system data
@@ -65,6 +66,7 @@ export default function Home() {
         throw new Error("Error al enviar el formulario");
       }
 
+      setIsSubmitted(true);
       console.log("Formulario enviado exitosamente");
     } catch (error) {
       console.error("Error:", error);
@@ -156,15 +158,21 @@ export default function Home() {
 
               <button
                 type="submit"
-                disabled={!isValid}
+                disabled={!isValid || isSubmitted}
                 className={`w-full text-white px-4 py-3 rounded-full transition-all duration-300 text-xs ${
-                  isValid
+                  isValid && !isSubmitted
                     ? "bg-sky-800 hover:bg-sky-700 hover:shadow-lg"
                     : "bg-gray-600 cursor-not-allowed"
                 }`}
               >
-                ENVIAR
+                {isSubmitted ? "✓ ENVIADO" : "ENVIAR"}
               </button>
+              {isSubmitted && (
+                <p className="text-center text-green-500 text-sm mt-2">
+                  ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo
+                  pronto.
+                </p>
+              )}
             </form>
           </section>
 
