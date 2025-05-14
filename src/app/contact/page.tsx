@@ -169,8 +169,7 @@ export default function Home() {
               </button>
               {isSubmitted && (
                 <p className="text-center text-green-500 text-sm mt-2">
-                  ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo
-                  pronto.
+                  Gracias! Nos pondremos en contacto pronto.
                 </p>
               )}
             </form>
