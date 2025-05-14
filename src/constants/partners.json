@@ -1,24 +1,28 @@
 {
   "partners": [
     {
-      "url": "/partners/ETH_Uruguay.png",
-      "alt": "ETH Uruguay",
-      "className": "w-32 h-32 object-contain filter  brightness-100 contrast-100"
+      "logo": "/partners/ETH_Uruguay.png",
+      "url": "https://www.ethereumuruguay.org",
+      "alt": "Ethereum Uruguay",
+      "className": "w-32 h-32 p-6 object-contain filter brightness-100 contrast-100"
     },
     {
-      "url": "/partners/eth_argentina_white.png",
-      "alt": "ETH Argentina",
-      "className": "w-32 h-32 object-contain filter invert brightness-0 contrast-100"
+      "logo": "/partners/eth_argentina_white.png",
+      "url": "https://ethereumargentina.org",
+      "alt": "Ethereum Argentina",
+      "className": "w-32 h-32 p-6 object-contain filter invert brightness-0 contrast-100"
     },
     {
-      "url": "/partners/consensys.png",
+      "logo": "/partners/consensys.png",
+      "url": "https://consensys.io",
       "alt": "Consensys",
       "className": "w-44 h-44 object-contain"
     },
     {
-      "url": "/partners/scroll.png",
-      "alt": "Scroll",
-      "className": "w-32 h-32 object-contain"
+      "logo": "/partners/scroll.png",
+      "url": "https://scroll.io",
+      "alt": "Scroll Network",
+      "className": "w-32 h-32 p-6 object-contain"
     }
   ]
 }

@@ -183,7 +183,7 @@ export default function Home() {
                 className="flex justify-center items-center bg-black/10 rounded-xl shadow-sm"
               >
                 <img
-                  src={partner.url}
+                  src={partner.logo}
                   // alt={partner.name}
                   className={partner.className}
                 />
