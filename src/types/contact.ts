@@ -13,7 +13,7 @@ export const contactFormSchema = z.object({
 
 // user's metadata
 export const systemDataSchema = z.object({
-  timestamp: z.date(),
+  timestamp: z.string(),
   userAgent: z.string().optional(),
   ipAddress: z.string().optional(),
   referrer: z.string().optional(),

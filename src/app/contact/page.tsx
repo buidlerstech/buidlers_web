@@ -14,7 +14,7 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
   const [systemData, setSystemData] = useState<SystemData>({
-    timestamp: new Date(),
+    timestamp: new Date().toISOString(),
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -22,7 +22,7 @@ export default function Home() {
     // get system data
     const collectSystemData = () => {
       const data: SystemData = {
-        timestamp: new Date(),
+        timestamp: new Date().toISOString(),
         userAgent: window.navigator.userAgent,
         language: window.navigator.language,
         timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
