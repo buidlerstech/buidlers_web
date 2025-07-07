@@ -144,7 +144,7 @@ export async function generateMetadata({ params }: PageProps) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://buidlers.tech";
   const postUrl = `${siteUrl}/blog/${post.slug}`;
   const imageUrl = post.image
-    ? `${siteUrl}${post.image}`
+    ? `${post.image}`
     : `${siteUrl}/images/blog-default.svg`;
 
   return {
