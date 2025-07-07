@@ -141,7 +141,7 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://buidler.tech";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://buidlers.tech";
   const postUrl = `${siteUrl}/blog/${post.slug}`;
   const imageUrl = post.image
     ? `${siteUrl}${post.image}`
@@ -156,7 +156,7 @@ export async function generateMetadata({ params }: PageProps) {
       title: post.title,
       description: post.description,
       url: postUrl,
-      siteName: "Tu Blog",
+      siteName: "Buidlers.tech",
       images: [
         {
           url: imageUrl,
