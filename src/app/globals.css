@@ -25,6 +25,24 @@
   }
 }
 
+html {
+  /* scroll-behavior: smooth; // Removido para que Lenis maneje el smooth scroll */
+}
+
+/* Estilos para Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
 body {
   color: var(--foreground);
   background: transparent;
@@ -88,4 +106,220 @@ body {
 
 .hover\:rotate-y-6:hover {
   transform: rotateY(16deg);
+}
+
+/* Estilos para el contenido del blog */
+.prose {
+  color: #374151;
+  max-width: none;
+  font-family: var(--font-crimson-text), serif; /* Texto principal del artículo con serif */
+}
+
+.prose h1 {
+  font-size: 2.75rem;
+  line-height: 3.5rem;
+  font-weight: 300;
+  color: #111827;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: center; /* font-family: var(--font-inter), sans-serif;*/
+}
+
+.prose h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 300;
+  color: #111827;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: #111827;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.prose h4 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  /* font-weight: 200; */
+  letter-spacing: -0.01em;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  /* font-family: var(--font-inter), sans-serif; */
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  letter-spacing: 0em;
+  font-family: var(--font-crimson-text), serif; /* Párrafos con Crimson Text */
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.625rem;
+  list-style-type: inherit;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose li > p {
+  margin-bottom: 0.75rem;
+}
+
+.prose pre {
+  background-color: #2f2e2e;
+  color: #c3bab0;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.25rem;
+  overflow-x: hidden;
+  font-size: 0.875rem;
+  line-height: 1.7142857;
+  @apply shadow-md;
+  font-family: var(--font-fira-code), monospace; /* Bloques de código con Fira Code */
+}
+
+.prose pre:hover {
+  overflow-x: auto;
+}
+
+.prose code {
+  background-color: #d3cac1;
+  color: #111827;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-fira-code), monospace; /* Código inline con Fira Code */
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit; /* Hereda la fuente del pre */
+}
+
+.prose blockquote {
+  border-left: 4px solid #d9b887;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  /* font-style: italic; */
+  background-color: #e7ddd1cc;
+  border-radius: 0.5rem;
+  color: #807a6b;
+  @apply shadow-md;
+}
+
+.prose blockquote p {
+  margin-top: 1.25rem;
+}
+
+.prose blockquote h3 {
+  margin: 1.25rem;
+}
+
+.prose em {
+  /* font-style: italic; */
+  color: #111827;
+  font-family: var(--font-crimson-text), serif;
+}
+
+.prose a {
+  /* color: #2563eb; */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.prose a:hover {
+  color: #a35a07;
+}
+
+.prose img {
+  margin-bottom: 1.25rem;
+  border-radius: 0.75rem;
+
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  @apply shadow-md;
+}
+
+.prose table {
+  width: 100%;
+  background-color: #b89c7d25;
+  font-size: 0.75rem;
+  border-collapse: collapse;
+  margin-bottom: 1.1rem;
+  font-family: var(--font-inter), sans-serif;
+  @apply shadow-md;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid #372b1e25;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.prose th {
+  /* background-color: #f3f4f6; */
+  font-weight: 600;
+}
+
+/* Clases de utilidad para tipografías del blog */
+.font-serif {
+  font-family: var(--font-crimson-text), serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-fira-code), monospace;
+}
+
+.font-cursive {
+  font-family: var(--font-ephesis), cursive;
+}
+
+/* Clases específicas para el blog */
+.blog-title {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 300;
+}
+
+.blog-content {
+  font-family: var(--font-crimson-text), serif;
+}
+
+.blog-code {
+  font-family: var(--font-fira-code), monospace;
 }

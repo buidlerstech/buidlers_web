@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'serif': ['var(--font-crimson-text)', 'serif'],
+        'sans': ['var(--font-inter)', 'sans-serif'],
+        'mono': ['var(--font-fira-code)', 'monospace'],
+        'cursive': ['var(--font-ephesis)', 'cursive'],
+      },
     },
   },
   plugins: [],
