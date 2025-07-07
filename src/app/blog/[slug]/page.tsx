@@ -9,13 +9,14 @@ import {
 import { ArrowLeftIcon } from "lucide-react";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function BlogPost({ params }: PageProps) {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -131,7 +132,8 @@ export async function generateStaticParams() {
 
 // Genera metadata para cada post
 export async function generateMetadata({ params }: PageProps) {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return {

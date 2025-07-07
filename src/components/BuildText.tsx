@@ -1,7 +1,7 @@
 "use client";
 
 interface BuildTextProps {
-  text: string;
+  text?: string;
 }
 
 const BuildText = ({ text = "build." }: BuildTextProps) => {
