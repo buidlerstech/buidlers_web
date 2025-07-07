@@ -7,14 +7,14 @@ import BuildText from "@/components/BuildText";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Descubre nuestros últimos artículos, guías y noticias del mundo de la tecnología.",
+    "Descubre nuestros últimos artículos, guías y noticias del mundo Web3.",
   keywords: "blog, tecnología, desarrollo, artículos, guías",
   openGraph: {
     title: "Blog",
     description:
-      "Descubre nuestros últimos artículos, guías y noticias del mundo de la tecnología.",
+      "Descubre nuestros últimos artículos, guías y noticias del mundo Web3.",
     url: "/blog",
-    siteName: "Tu Blog",
+    siteName: "Buidlers.tech",
     images: [
       {
         url: "/images/blog-default.svg",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog",
     description:
-      "Descubre nuestros últimos artículos, guías y noticias del mundo de la tecnología.",
+      "Descubre nuestros últimos artículos, guías y noticias del mundo Web3.",
     images: ["/images/blog-default.svg"],
   },
   robots: {
