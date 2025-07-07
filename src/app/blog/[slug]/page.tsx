@@ -103,8 +103,8 @@ export default async function BlogPost({ params }: PageProps) {
                       key={item.id}
                       href={`#${item.id}`}
                       className="block font-mono text-xs text-stone-400 hover:text-amber-400
-                       transition-colors duration-200 border-l-2 border-transparent
-                        hover:border-stone-400 pl-3 pb-1"
+                       transition-colors duration-200  border-l-4 border-transparent
+                        hover:border-amber-400 pl-3 pb-1"
                     >
                       {item.title}
                     </a>
