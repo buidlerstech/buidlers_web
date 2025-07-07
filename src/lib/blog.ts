@@ -87,6 +87,8 @@ export function getAllPosts(): BlogPost[] {
           content,
           author: data.author,
           tags: data.tags || ["coming soon"],
+          image: data.image,
+          language: data.language,
           description: data.description || data.excerpt || content.substring(0, 160) + '...',
         };
       });

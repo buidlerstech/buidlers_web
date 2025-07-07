@@ -48,7 +48,6 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts();
-
   return (
     <div
       style={{
@@ -118,9 +117,12 @@ export default function BlogPage() {
           {posts.map((post) => (
             <article
               key={post.slug}
-              className="relative rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow min-h-[400px]"
+              className="relative rounded-lg shadow-md overflow-hidden hover:shadow-lg 
+              transition-shadow min-h-[400px]"
               style={{
-                backgroundImage: post.image ? `url(${post.image})` : undefined,
+                backgroundImage: post.image
+                  ? `url(${post.image})`
+                  : "url(/images/blog-default.svg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
@@ -159,6 +161,9 @@ export default function BlogPage() {
 
                 {post.tags && post.tags.length > 0 && (
                   <div className="flex flex-wrap gap-2">
+                    <span className="text-[7pt] px-1 py-[0.t5pt] rounded">
+                      {post.language}
+                    </span>
                     {post.tags.map((tag) => (
                       <span
                         key={tag}
