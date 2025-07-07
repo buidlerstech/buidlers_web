@@ -1,7 +1,14 @@
 import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Inter,
+  Crimson_Text,
+  Fira_Code,
+} from "next/font/google";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
 const ephesis = localFont({
   src: "../../public/fonts/Ephesis-Regular.ttf",
@@ -19,6 +26,24 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const crimsonText = Crimson_Text({
+  variable: "--font-crimson-text",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
+
+const firaCode = Fira_Code({
+  variable: "--font-fira-code",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const description =
@@ -69,9 +94,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${ephesis.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ephesis.variable} ${inter.variable} ${crimsonText.variable} ${firaCode.variable} antialiased`}
       >
-        {children}
+        <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>
     </html>
   );
