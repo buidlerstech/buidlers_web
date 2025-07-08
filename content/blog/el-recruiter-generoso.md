@@ -60,13 +60,13 @@ Cada vez que vemos alertas como "código malicioso detectado" o "malware detecta
 
 ### TL;DR
 
-| Fase                    | Descripción                                                                      | Riesgo         |
-| ----------------------- | -------------------------------------------------------------------------------- | -------------- |
-| Contacto Inicial        | Reclutador/CTO/COO te contacta ofreciendo puesto con salario llamativamente alto | 💤 Bajo        |
-| Descripción del Trabajo | Manda descripción que parece perfecta para tu perfil                             | 💤 Bajo        |
-| Entrevista Rápida       | Charla breve, confirma que sos "ideal" para el puesto                            | 👀 Medio       |
-| Prueba Técnica          | Te pide que clones su repositorio para hacer modificaciones como test técnico    | 🔴 Alto        |
-| Ejecución               | Su código aparentemente inofensivo es **un pasaje directo a la ruina**           | 💀 **CRÍTICO** |
+| Fase                    | Descripción                                                                     | Riesgo         |
+| ----------------------- | ------------------------------------------------------------------------------- | -------------- |
+| Contacto Inicial        | Recruiter/CTO/COO te contacta ofreciendo puesto con salario llamativamente alto | 💤 Bajo        |
+| Descripción del Trabajo | Manda descripción que parece perfecta para tu perfil                            | 💤 Bajo        |
+| Entrevista Rápida       | Charla breve, confirma que sos "ideal" para el puesto                           | 👀 Medio       |
+| Prueba Técnica          | Te pide que clones su repositorio para hacer modificaciones como test técnico   | 🔴 Alto        |
+| Ejecución               | Su código aparentemente inofensivo es **un pasaje directo a la ruina**          | 💀 **CRÍTICO** |
 
 ### Este análisis te va a mostrar:
 
@@ -182,7 +182,7 @@ Lo que encontré fue una verdadera **ingeniería del mal**:
 
 ### El Modus Operandi
 
-El **supuesto reclutador** (a veces autodesignado tech lead o C-level) inicia contacto siguiendo este patrón:
+El **supuesto recruiter** (a veces autodesignado tech lead o C-level) inicia contacto siguiendo este patrón:
 
 - Contacto por LinkedIn
 - Oferta de trabajo atractiva
