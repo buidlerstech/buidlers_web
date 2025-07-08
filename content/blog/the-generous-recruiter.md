@@ -10,7 +10,7 @@ excerpt: "You were looking for a job in the Web3 industry, and ended up losing e
 This is not a real story, but a potentially real one."
 description: "Scam, deception, social engineering, and other techniques used to deceive people into giving up their personal information and money."
 image: "https://gist.github.com/raiseerco/37f8abf7feb71663c95390d36c2e5513/raw/08ba24bc997f458b15d49f3f26bbc965a5b726d8/0.png"
-tags: ["linkedin", "scams", "jobs", "web3 development"]
+tags: ["linkedin", "scams", "jobs", "web3 dev"]
 language: "🇬🇧"
 ---
 
@@ -251,6 +251,8 @@ Stay alert and do not underestimate the risk is CRITICAL
 - It is quite extensive, with many files, dependencies, scripts, and even `.env` files already populated (I will delve into this later). It usually contains complex frontend, backend, contract, etc. structures. The idea is to give the appearance of an important development and "scare" you in the complex architecture and a myriad of folders.
 
 <div style="text-align:center">
+<br/>
+
   <img   src="https://gist.github.com/raiseerco/37f8abf7feb71663c95390d36c2e5513/raw/7163dba2da784c109ac305b8616f6a4177633e05/4.png" alt="folder structure" />
 </div>
 
@@ -336,7 +338,7 @@ DEV_SECRET_KEY="eC1zZWNyZXQta2V5"
 DEV_SECRET_VALUE="Xw=="
 ```
 
-Nothing unusual, right?
+Nothing unusual, right?<br/>
 Why would someone be so kind as to give you the API keys already loaded?
 Well, if we use the magic of `base64` decoding, we will see how the crime is revealed:
 
