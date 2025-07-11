@@ -81,7 +81,7 @@ ${validatedData.mensaje}
         {
           success: false,
           error: "Datos de formulario inválidos",
-          details: error.errors,
+          details: error.issues,
         },
         { status: 400 }
       );
