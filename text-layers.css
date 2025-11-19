@@ -1,0 +1,249 @@
+/* 62 */
+
+position: relative;
+width: 1920px;
+height: 1080px;
+
+background: #0c0c0c;
+
+/* Group 14 */
+
+position: absolute;
+width: 332.56px;
+height: 46px;
+left: calc(50% - 332.56px / 2 - 739.72px);
+top: calc(50% - 46px / 2 - 463px);
+
+/* jerarquías de texto */
+
+position: absolute;
+width: 317px;
+height: 46px;
+left: 69.56px;
+top: 54px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 38.2256px;
+line-height: 46px;
+letter-spacing: -0.03em;
+
+color: #f1e65d;
+
+/* Rectangle 507 */
+
+position: absolute;
+width: 38.08px;
+height: 9.94px;
+left: 54px;
+top: 58.1px;
+
+background: #f1e65d;
+transform: rotate(-90deg);
+
+/* usar Inter Medium para títulos, Pixel Operator Mono para subtítulos y Inter Regular para el cuerpo de texto; mantener contraste alto y color amarillo institucional en los encabezados; */
+
+position: absolute;
+width: 896px;
+height: 165px;
+left: 970px;
+top: 800px;
+
+/* Body 2 */
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 136%;
+/* or 41px */
+text-align: justify;
+letter-spacing: -0.01em;
+
+color: #f1e65d;
+
+/* Group 185 */
+
+position: absolute;
+width: 591px;
+height: 574.77px;
+left: calc(50% - 591px / 2 - 610.5px);
+top: calc(50% - 574.77px / 2 - 33.7px);
+
+/* Group 130 */
+
+position: absolute;
+width: 591px;
+height: 143.51px;
+left: 54px;
+top: 218.92px;
+
+/* título */
+
+position: absolute;
+width: 510.64px;
+height: 142px;
+left: 54px;
+top: 219.46px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 148.088px;
+line-height: 96%;
+/* or 142px */
+text-align: right;
+letter-spacing: -0.08em;
+
+color: #f1e65d;
+
+/* Rectangle 507 */
+
+position: absolute;
+width: 143.51px;
+height: 65.38px;
+left: 579.62px;
+top: 218.92px;
+
+background: #f1e65d;
+transform: rotate(-90deg);
+
+/* Group 135 */
+
+position: absolute;
+width: 590.99px;
+height: 197px;
+left: 54px;
+top: 596.68px;
+
+/* contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido */
+
+position: absolute;
+width: 590.99px;
+height: 197px;
+left: calc(50% - 590.99px / 2 - 610.51px);
+top: 596.68px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 30.8257px;
+line-height: 112%;
+/* or 35px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+letter-spacing: -0.03em;
+
+color: #f1e65d;
+
+/* # subtítulo */
+
+position: absolute;
+width: 590.99px;
+height: 25px;
+left: calc(50% - 590.99px / 2 - 610.51px);
+top: 434.11px;
+
+font-family: "Pixel Operator Mono";
+font-style: normal;
+font-weight: 400;
+font-size: 45.2528px;
+line-height: 113%;
+/* or 51px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: #f1e65d;
+
+/* Inter Medium */
+
+position: absolute;
+width: 123px;
+height: 27px;
+left: 970px;
+top: 274.64px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 136%;
+/* or 27px */
+letter-spacing: -0.01em;
+
+color: #f1e65d;
+
+/* Pixel operator Mono */
+
+position: absolute;
+width: 187px;
+height: 27px;
+left: 970px;
+top: 434.11px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 136%;
+/* or 27px */
+letter-spacing: -0.01em;
+
+color: #f1e65d;
+
+/* Line 22 */
+
+position: absolute;
+width: 285px;
+height: 0px;
+left: 665px;
+top: 447.61px;
+
+border: 2px solid #f1e65d;
+
+/* Inter Regular */
+
+position: absolute;
+width: 119px;
+height: 27px;
+left: 970px;
+top: 596.68px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 136%;
+/* or 27px */
+letter-spacing: -0.01em;
+
+color: #f1e65d;
+
+/* Line 23 */
+
+position: absolute;
+width: 285px;
+height: 0px;
+left: 665px;
+top: 610.18px;
+
+border: 2px solid #f1e65d;
+
+/* Line 21 */
+
+position: absolute;
+width: 285px;
+height: 0px;
+left: 665px;
+top: 288.14px;
+
+border: 2px solid #f1e65d;
