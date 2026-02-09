@@ -2,8 +2,9 @@
   "name": "buidlers.tech",
   "version": "0.3.0",
   "private": true,
+  "packageManager": "pnpm@10.15.0",
   "author": "Leo Sagan",
-    "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -28,6 +29,7 @@
     "@types/node": "^20",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
+    "baseline-browser-mapping": "^2.9.19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "shadcn": "^3.8.4",
