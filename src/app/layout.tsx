@@ -1,22 +1,35 @@
 import "./globals.css";
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import type { Metadata } from "next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-body",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Buidlers.tech",
-  description: "./build_freedom --with community",
+  title:
+    "Buidlers.tech — Comunidad Web3 en Argentina | Eventos, Builders y Alianzas",
+  description:
+    "Comunidad Web3 que une builders, proyectos y partners para crear un ecosistema abierto, inclusivo y sostenible. Eventos, oportunidades y colaboración real.",
+  keywords: [
+    "comunidad web3",
+    "buidlers",
+    "eventos web3",
+    "ethereum argentina",
+    "builders",
+    "hackathons",
+    "alianzas web3",
+  ],
+  openGraph: {
+    title: "Buidlers.tech — Comunidad Web3 en Argentina",
+    description:
+      "Unimos builders, proyectos y partners para crear oportunidades Web3 reales.",
+    images: ["/cursor-intro.png"],
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="es">
+      <body className={`${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
