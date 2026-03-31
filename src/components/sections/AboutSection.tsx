@@ -1,3 +1,5 @@
+import { SplitCard } from "@/components/ui/split-card";
+
 type Benefit = {
   title: string;
   description: string;
@@ -15,88 +17,57 @@ export function AboutSection({ benefits }: AboutSectionProps) {
           sobre nosotros
         </h2>
         <p className="mt-4 max-w-2xl font-mono tracking-tight text-base text-foreground/70 lg:text-lg">
-          nuestra mision, vision y valores reflejan el tipo de comunidad que
-          queremos construir;
+          nuestra misión, visión y valores definen el sistema que construimos;
         </p>
       </div>
+
       <div className="grid gap-6 lg:grid-cols-3">
-        <div data-scroll-card>
-          <h3 className="text-2xl font-semibold">mision</h3>
-          <p className="mt-4 font-mono tracking-tight text-base text-foreground/70">
-            unir y potenciar una comunidad de desarrolladores web3, impulsando
-            la colaboracion y el aprendizaje colectivo sin buscar beneficio
-            economico de nuestros miembros;
+        <SplitCard title="misión">
+          <p>
+            incubar y lanzar tecnologías en web3 e ia que potencien valor real; un ecosistema
+            híbrido que funcione como fuego creador para quienes construyen para el bien común;
           </p>
-        </div>
-        <div data-scroll-card>
-          <h3 className="text-2xl font-semibold">vision</h3>
-          <p className="mt-4 font-mono tracking-tight text-base text-foreground/70">
-            ser un faro de colaboracion, innovacion y etica en el espacio web3,
-            liderando el camino hacia un ecosistema digital mas inclusivo y
-            equitativo;
+        </SplitCard>
+
+        <SplitCard title="visión">
+          <p>
+            inaugurar una nueva lógica de hacer las cosas; un punto cero donde lo que no funciona se
+            reescribe; soberanía, transparencia y colaboración como pilares;
           </p>
-        </div>
-        <div data-scroll-card>
-          <h3 className="text-2xl font-semibold">valores</h3>
-          <ul className="mt-4 space-y-3 font-mono tracking-tight text-base text-foreground/70">
-            <li>— autenticidad y transparencia</li>
-            <li>— claridad de proposito</li>
-            <li>— integridad y principios</li>
-            <li>— inclusion y colaboracion</li>
+        </SplitCard>
+
+        <SplitCard title="valores">
+          <ul className="space-y-2">
+            <li>— soberanía</li>
+            <li>— ética</li>
+            <li>— autonomía</li>
+            <li>— colaboración</li>
+            <li>— transparencia</li>
+            <li>— privacidad</li>
           </ul>
-        </div>
+        </SplitCard>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div data-scroll-card>
-          <h3 className="text-3xl font-semibold">ethos</h3>
-          <div className="mt-6 space-y-6 text-foreground/70">
-            <div>
-              <h4 className="text-lg font-semibold text-foreground">
-                autenticidad
-              </h4>
-              <p className="mt-2 font-mono tracking-tight text-base">
-                somos un colectivo autentico que rechaza las estructuras
-                corporativas tradicionales y promueve la transparencia en todas
-                nuestras acciones;
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-foreground">
-                proposito
-              </h4>
-              <p className="mt-2 font-mono tracking-tight text-base">
-                construimos un ecosistema sano para los que estamos y para los
-                que vienen, enfocandonos en el valor real mas alla del precio;
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-foreground">
-                inteligencia colectiva
-              </h4>
-              <p className="mt-2 font-mono tracking-tight text-base">
-                trabajamos juntos para dar valor al ecosistema, promoviendo el
-                conocimiento y el desarrollo de soluciones web3 innovadoras;
-              </p>
-            </div>
-          </div>
-        </div>
-        <div data-scroll-card>
-          <h3 className="text-2xl font-semibold">beneficios centrales</h3>
-          <div className="mt-6 grid gap-4">
-            {benefits.map((benefit) => (
-              <div
-                key={benefit.title}
-                className="rounded-xl border border-white/[0.06] bg-white/[0.03] p-5"
-              >
-                <p className="text-lg font-semibold">{benefit.title}</p>
-                <p className="mt-2 text-base text-foreground/70">
-                  {benefit.description}
-                </p>
-              </div>
+      <div className="grid gap-6 lg:grid-cols-2">
+        <SplitCard title="ethos">
+          <p>
+            somos un colectivo auténtico que rechaza las estructuras corporativas tradicionales;
+            construimos un ecosistema sano para los que estamos y para los que vienen, enfocándonos
+            en el valor real más allá del precio;
+          </p>
+        </SplitCard>
+
+        <SplitCard title="beneficios" inverted>
+          <ul className="space-y-3">
+            {benefits.slice(0, 3).map((benefit) => (
+              <li key={benefit.title}>
+                <span className="font-semibold">{benefit.title}</span>
+                {" — "}
+                {benefit.description}
+              </li>
             ))}
-          </div>
-        </div>
+          </ul>
+        </SplitCard>
       </div>
     </section>
   );

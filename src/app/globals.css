@@ -59,9 +59,7 @@
   --border: #f1e65d;
   --input: #484736;
   --ring: #f1e65d;
-
 }
-
 
 @layer base {
   * {
@@ -96,23 +94,11 @@
   }
 }
 
-
 .hero-ambient {
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(241, 230, 93, 0.3),
-      transparent 45%
-    ),
-    radial-gradient(
-      circle at 80% 10%,
-      rgba(157, 154, 114, 0.2),
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at 70% 80%,
-      rgba(200, 194, 111, 0.2),
-      transparent 50%
-    );
+  background:
+    radial-gradient(circle at 20% 20%, rgba(241, 230, 93, 0.3), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(157, 154, 114, 0.2), transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(200, 194, 111, 0.2), transparent 50%);
   animation: hero-shift 12s ease-in-out infinite;
   filter: blur(10px);
 }
@@ -152,12 +138,7 @@
   left: 2rem;
   right: 2rem;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(241, 230, 93, 0.3),
-    transparent
-  );
+  background: linear-gradient(to right, transparent, rgba(241, 230, 93, 0.3), transparent);
   pointer-events: none;
 }
 
