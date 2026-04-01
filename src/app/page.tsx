@@ -148,12 +148,22 @@ export default function Home() {
           id="inicio"
           className="relative w-full h-screen overflow-hidden flex items-center justify-center bg-black"
         >
+          {/* Vertical video: mobile portrait only */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-contain"
+            className="hidden portrait:block md:hidden w-full h-full object-contain"
+            src="/animacion_vertical.mp4"
+          />
+          {/* Horizontal video: landscape mobile + desktop */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="block portrait:hidden md:block w-full h-full object-contain"
             src="/animacion.mp4"
           />
         </section>
