@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[#212121] text-white border border-[#212121] shadow-[6px_6px_12px_#0a0a0a,-6px_-6px_12px_#2f2f2f] transition-all active:text-[#666] active:shadow-[0_0_0_#000,0_0_0_#2f2f2f,inset_4px_4px_12px_#1a1a1a,inset_-4px_-4px_12px_#1f1f1f]",
+          "bg-[#212121] text-white border border-[#212121] transition-all active:text-[#666]",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
