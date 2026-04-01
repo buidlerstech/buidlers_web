@@ -68,10 +68,10 @@ export const venues = [
 ];
 
 export const partners = [
-  { name: "Consensys", href: "https://consensys.io/" },
-  { name: "Aptos", href: "https://aptosfoundation.org/" },
-  { name: "Scroll", href: "https://scroll.io/" },
-  { name: "Ethereum Argentina", href: "https://ethereumargentina.org/" },
+  { name: "Consensys", href: "https://consensys.io/", logo: "/consensys_logo.svg", logoFullWidth: true, showNameInBanner: true },
+  { name: "Scroll", href: "https://scroll.io/", logo: "/scroll_logo.svg", logoFullWidth: true },
+  { name: "Aptos", href: "https://aptosfoundation.org/", logo: "/aptos_logo.svg", logoFullWidth: true },
+  { name: "Ethereum Argentina", href: "https://ethereumargentina.org/", logo: "/ethereum_arg_logo.png", logoFullWidth: true },
 ];
 
 export const projects = [

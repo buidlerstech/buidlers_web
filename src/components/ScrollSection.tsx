@@ -93,8 +93,9 @@ export function ScrollSection({
           scrollTrigger: {
             trigger: el,
             start: "top 88%",
-            end: "top 22%",
+            end: "top 50%",
             scrub: 1.2,
+            invalidateOnRefresh: true,
           },
           opacity: 1,
           x: 0,
@@ -118,6 +119,7 @@ export function ScrollSection({
               start: "top 70%",
               end: "center 35%",
               scrub: 1,
+              invalidateOnRefresh: true,
             },
           });
 

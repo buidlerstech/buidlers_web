@@ -1,6 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 import Image from "next/image";
 import UnicornScene from "unicornstudio-react";
@@ -40,6 +46,15 @@ export default function Home() {
       yearsActive: years,
     };
   }, []);
+
+  useEffect(() => {
+    if (!showSplash && typeof window !== "undefined") {
+      const id = requestAnimationFrame(() => {
+        ScrollTrigger.refresh();
+      });
+      return () => cancelAnimationFrame(id);
+    }
+  }, [showSplash]);
 
   useEffect(() => {
     const fadeTimer = setTimeout(() => setIsFading(true), 4000);
@@ -144,17 +159,14 @@ export default function Home() {
       </header>
 
       <main className="mx-auto flex w-full flex-col pb-24">
-        <section
-          id="inicio"
-          className="relative w-full h-screen overflow-hidden flex items-center justify-center bg-black"
-        >
+        <section id="inicio" className="relative w-full h-screen overflow-hidden bg-black">
           {/* Vertical video: mobile portrait only */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="hidden portrait:block md:hidden w-full h-full object-contain"
+            className="hidden portrait:block md:hidden absolute left-0 top-1/2 -translate-y-1/2 w-full h-auto"
             src="/animacion_vertical.mp4"
           />
           {/* Horizontal video: landscape mobile + desktop */}
@@ -163,7 +175,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            className="block portrait:hidden md:block w-full h-full object-cover"
+            className="block portrait:hidden md:block absolute inset-0 w-full h-full object-cover"
             src="/animacion.mp4"
           />
         </section>
