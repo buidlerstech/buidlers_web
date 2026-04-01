@@ -9,19 +9,19 @@ type SplitCardProps = {
 
 export function SplitCard({ title, children, inverted = false }: SplitCardProps) {
   return (
-    <div className="flex overflow-hidden border border-[var(--color-primary)]">
+    <div className="flex flex-col md:flex-row overflow-hidden border border-[var(--color-primary)]">
       {/* Accent panel */}
       <div
-        className={`flex w-[28%] shrink-0 flex-col justify-end p-5 ${
+        className={`flex h-20 md:h-auto md:w-[28%] shrink-0 flex-col justify-end items-end p-4 ${
           inverted ? "bg-black" : "bg-[var(--color-primary)]"
         }`}
       >
         <Image
-          src={inverted ? "/logo_amarillo.png" : "/logo_negro.png"}
+          src={inverted ? "/logo_full_amarillo.png" : "/logo_full_negro.png"}
           alt="buidlers"
-          width={80}
-          height={24}
-          className="object-contain object-left"
+          width={70}
+          height={20}
+          className="object-contain object-right"
         />
       </div>
 

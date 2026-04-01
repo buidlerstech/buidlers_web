@@ -97,7 +97,7 @@ export default function Home() {
     <div className="relative min-h-screen">
       {showSplash && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500 ${
+          className={`fixed inset-0 z-[60] flex items-center justify-center bg-black transition-opacity duration-500 ${
             isFading ? "opacity-0" : "opacity-100"
           }`}
         >
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
       )}
 
-      <header className="fixed top-0 z-40 w-full backdrop-blur-lg">
+      <header className="fixed top-0 z-50 w-full backdrop-blur-lg">
         <div className="mx-auto flex w-full items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
             <Image src="/logo.svg" alt="buidlers" width={100} height={36} />
@@ -163,7 +163,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            className="block portrait:hidden md:block w-full h-full object-contain"
+            className="block portrait:hidden md:block w-full h-full object-cover"
             src="/animacion.mp4"
           />
         </section>

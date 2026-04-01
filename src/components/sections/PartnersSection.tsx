@@ -25,15 +25,15 @@ export function PartnersSection({ partners }: PartnersSectionProps) {
             href={partner.href}
             target="_blank"
             rel="noreferrer"
-            className="flex overflow-hidden transition-transform duration-300 hover:-translate-y-1"
+            className="flex flex-col sm:flex-row overflow-hidden transition-transform duration-300 hover:-translate-y-1"
           >
-            <div className="flex w-[28%] flex-col justify-end bg-[var(--color-primary)] p-3">
+            <div className="flex h-16 sm:h-auto sm:w-[28%] shrink-0 flex-col justify-end items-end bg-[var(--color-primary)] p-3">
               <Image
-                src="/logo_negro.png"
+                src="/logo_full_negro.png"
                 alt="buidlers"
-                width={80}
-                height={24}
-                className="object-contain object-left"
+                width={60}
+                height={18}
+                className="object-contain object-right"
               />
             </div>
             <div className="flex flex-1 flex-col justify-between border border-white/[0.06] bg-white/[0.03] p-4">

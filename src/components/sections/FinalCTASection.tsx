@@ -6,14 +6,14 @@ import { Input } from "@/components/ui/input";
 export function FinalCTASection() {
   return (
     <section id="contacto">
-      <div className="flex overflow-hidden">
-        <div className="flex w-[14%] flex-col justify-end bg-[var(--color-primary)] p-5">
+      <div className="flex flex-col md:flex-row overflow-hidden">
+        <div className="flex h-20 md:h-auto md:w-[14%] shrink-0 flex-col justify-end items-end bg-[var(--color-primary)] p-4">
           <Image
-            src="/logo_negro.png"
+            src="/logo_full_negro.png"
             alt="buidlers"
-            width={80}
-            height={24}
-            className="object-contain object-left"
+            width={70}
+            height={20}
+            className="object-contain object-right"
           />
         </div>
         <div className="flex flex-1 border border-white/[0.06] bg-white/[0.03] p-8">
