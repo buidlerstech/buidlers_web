@@ -76,9 +76,7 @@ export function ScrollSection({
     if (!el) return;
 
     // Respect reduced motion preference
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReducedMotion) {
       gsap.set(el, { opacity: 1 });
       const cards = el.querySelectorAll("[data-scroll-card]");
@@ -149,11 +147,7 @@ export function ScrollSection({
   }, [effect, staggerCards]);
 
   return (
-    <div
-      ref={sectionRef}
-      className={`scroll-section ${className}`}
-      style={{ opacity: 0 }}
-    >
+    <div ref={sectionRef} className={`scroll-section ${className}`} style={{ opacity: 0 }}>
       {children}
     </div>
   );

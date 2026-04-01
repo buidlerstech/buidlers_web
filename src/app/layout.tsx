@@ -11,8 +11,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Buidlers.tech — Comunidad Web3 en Argentina | Eventos, Builders y Alianzas",
+  icons: {
+    icon: "/logo_negro.png",
+  },
+  title: "Buidlers.tech — Comunidad Web3 en Argentina | Eventos, Builders y Alianzas",
   description:
     "Comunidad Web3 que une builders, proyectos y partners para crear un ecosistema abierto, inclusivo y sostenible. Eventos, oportunidades y colaboración real.",
   keywords: [
@@ -26,8 +28,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Buidlers.tech — Comunidad Web3 en Argentina",
-    description:
-      "Unimos builders, proyectos y partners para crear oportunidades Web3 reales.",
+    description: "Unimos builders, proyectos y partners para crear oportunidades Web3 reales.",
     images: ["/cursor-intro.png"],
   },
 };
@@ -39,9 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -12,9 +12,7 @@ export function RoadmapSection({ roadmap }: RoadmapSectionProps) {
   return (
     <section id="roadmap" className="space-y-10">
       <div>
-        <h2 className="text-4xl font-semibold text-[var(--color-primary)] lg:text-5xl">
-          roadmap
-        </h2>
+        <h2 className="text-4xl font-semibold text-[var(--color-primary)] lg:text-5xl">roadmap</h2>
         <p className="mt-4 max-w-2xl text-base text-foreground/70 lg:text-lg">
           lo que viene para la comunidad;
         </p>

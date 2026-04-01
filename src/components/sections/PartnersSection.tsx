@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Partner = {
   name: string;
   href: string;
@@ -11,11 +13,9 @@ export function PartnersSection({ partners }: PartnersSectionProps) {
   return (
     <section id="partners" className="space-y-10">
       <div>
-        <h2 className="text-4xl font-semibold text-[var(--color-primary)] lg:text-5xl">
-          partners
-        </h2>
+        <h2 className="text-4xl font-semibold text-[var(--color-primary)] lg:text-5xl">partners</h2>
         <p className="mt-4 max-w-2xl text-base text-foreground/70 lg:text-lg">
-          alianzas con organizaciones que comparten nuestra vision;
+          nodos del ecosistema que comparten los mismos principios;
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -25,13 +25,21 @@ export function PartnersSection({ partners }: PartnersSectionProps) {
             href={partner.href}
             target="_blank"
             rel="noreferrer"
-            data-scroll-card
-            className="block transition-transform duration-300 hover:-translate-y-1"
+            className="flex overflow-hidden transition-transform duration-300 hover:-translate-y-1"
           >
-            <p className="text-2xl font-semibold">{partner.name}</p>
-            <p className="mt-3 font-pixel text-sm text-foreground/50">
-              explorar alianza →
-            </p>
+            <div className="flex w-[28%] flex-col justify-end bg-[var(--color-primary)] p-3">
+              <Image
+                src="/logo_negro.png"
+                alt="buidlers"
+                width={80}
+                height={24}
+                className="object-contain object-left"
+              />
+            </div>
+            <div className="flex flex-1 flex-col justify-between border border-white/[0.06] bg-white/[0.03] p-4">
+              <p className="text-xl font-semibold">{partner.name}</p>
+              <p className="font-pixel text-sm text-foreground/50">explorar alianza →</p>
+            </div>
           </a>
         ))}
       </div>

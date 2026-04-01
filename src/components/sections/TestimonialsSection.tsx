@@ -10,9 +10,7 @@ type TestimonialsSectionProps = {
   testimonials: Testimonial[];
 };
 
-export function TestimonialsSection({
-  testimonials,
-}: TestimonialsSectionProps) {
+export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) {
   return (
     <section id="testimonios" className="space-y-10">
       <div>
@@ -41,9 +39,7 @@ export function TestimonialsSection({
               </Avatar>
               <div>
                 <p className="text-base font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-foreground/50">
-                  {testimonial.role}
-                </p>
+                <p className="text-sm text-foreground/50">{testimonial.role}</p>
               </div>
             </div>
           </div>

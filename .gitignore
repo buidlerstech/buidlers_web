@@ -43,7 +43,6 @@ next-env.d.ts
 .cursor
 .agents
 .agent
-.claude
 .commandcode
 .windsurf
 .skills

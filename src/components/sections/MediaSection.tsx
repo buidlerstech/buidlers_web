@@ -14,22 +14,12 @@ export function MediaSection() {
       <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div data-scroll-card>
           <div className="relative h-[380px] w-full overflow-hidden rounded-xl">
-            <Image
-              src="/18.jpg"
-              alt="Panel de comunidad"
-              fill
-              className="object-cover"
-            />
+            <Image src="/18.jpg" alt="Panel de comunidad" fill className="object-cover" />
           </div>
         </div>
         <div data-scroll-card>
           <div className="relative h-[380px] w-full overflow-hidden rounded-xl">
-            <Image
-              src="/cursor-intro.png"
-              alt="Identidad Buidlers"
-              fill
-              className="object-cover"
-            />
+            <Image src="/cursor-intro.png" alt="Identidad Buidlers" fill className="object-cover" />
           </div>
         </div>
       </div>
